@@ -1,0 +1,27 @@
+.active-link, .active-link2, .active-link3, .active-link4, .active-link5, .active-link6, .active-link7, .active-link8 {
+    /* color: whitesmoke; */
+    /* display: flex;
+    background-color: rgba(255, 255, 255, 0.2);
+    background-size: cover; */
+    text-decoration: none;
+    color: white ;
+    }
+    .active-link{
+        border-left: 1px solid #39f;
+        border-right: 1px solid #39f;
+        white-space: nowrap;
+        background-image: linear-gradient(to top, rgba(0, 160, 227, .90), rgba(0, 0, 0, .02), rgba(0, 0, 0, .02), rgba(0, 160, 227, .90)) !important;
+        /* color: black; */
+        
+        
+        }
+
+.notactive{
+color: white;
+text-decoration: none;
+
+}
+
+.notactive:hover{
+
+} 

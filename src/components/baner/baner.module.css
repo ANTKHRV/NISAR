@@ -1,0 +1,62 @@
+.baner{
+    margin: 0;
+    padding: 0;
+    /* width: 100%;
+    height: 100%; */
+    width: 100%;
+    background-size: cover;
+    /*обязательно задаем ширину и высоту, чтобы блок отобразился*/
+    min-height: 832px; 
+    background-image: url(./baner.jpg);
+
+}
+@media screen and (max-width: 1600px) {
+.baner{
+    min-height: 685px;
+}
+}
+@media screen and (max-width: 1400px) {
+    .baner{
+        min-height: 600px;
+    }
+    }
+
+    @media screen and (max-width: 1280px) {
+        .baner{
+            min-height: 548px;
+        }
+        }
+        @media screen and (max-width: 1200px) {
+            .baner{
+                min-height: 514px;
+            }
+            }
+            @media screen and (max-width: 1000px) {
+                .baner{
+                    min-height: 428px;
+                }
+                }
+                @media screen and (max-width: 800px) {
+                    .baner{
+                        min-height: 350px;
+                    }
+                    }
+
+                    @media screen and (max-width: 650px) {
+                        .baner{
+                            min-height: 350px;
+                            background-image: url(./baner2.png);
+                        }
+                        }
+                        @media screen and (max-width: 520px) {
+                            .baner{
+                                min-height: 350px;
+                                background-image: url(./baner3.png);
+                            }
+                            }
+                            @media screen and (max-width: 444px) {
+                                .baner{
+                                    min-height: 350px;
+                                    background-image: url(./baner4.png);
+                                }
+                                }
