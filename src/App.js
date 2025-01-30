@@ -10,10 +10,11 @@ import Baner from './components/baner/baner'
 import ScrollButton from './components/ScrollButton/ScrollButton'
 import Footer from './components/footer/footer'
 import Str1 from './components/str1/str1'
+import Str2 from './components/str2/str2'
 import WindowCall from './components/WindowCall/WindowCall'
-import Home from './pages/Home'
-import Reports from './pages/Reports'
-import Products from './pages/Products'
+// import Home from './pages/Vakansiya/Home'
+// import Reports from './pages/Reports'
+// import Products from './pages/Products'
 
 function App2() {
     return (
@@ -25,6 +26,7 @@ function App2() {
 <ScrollButton/>
 <WindowCall/>
 <Str1/>
+<Str2/>
 <Footer/>
 
 </div>

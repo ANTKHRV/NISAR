@@ -2,10 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import Products from './pages/Products';
+
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router";
-import Pagesobsh from './pages/pagesObsh';
+import Vacanciya from './pages/Vakansiya/Vakansiya';
+import Contacts from './pages/Contacts/Contacts';
+import News from './pages/News/News';
+import Hotp from './pages/Hotp/Hotp'
+import Pokupki from './pages/Pokupki/Pokupki';
+import Doc from './pages/Doc/Doc';
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -16,7 +21,12 @@ const root = document.getElementById("root");
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<App />} />
-            <Route path="/pagesobsh" element={<Pagesobsh/>} />
+            <Route path="/vacanciya" element={<Vacanciya/>} />
+            <Route path="/contacts" element={<Contacts/>} />
+            <Route path="/news" element={<News/>} />
+            <Route path="/hotp" element={<Hotp/>} />
+            <Route path="/pokupki" element={<Pokupki/>} />
+            <Route path="/documents" element={<Doc/>} />
           </Routes>
         </BrowserRouter>
  

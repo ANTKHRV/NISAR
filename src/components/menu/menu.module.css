@@ -21,9 +21,34 @@
     font-family: OpenSans;
     /*обязательно указываем название шрифта, его можно придумать самостоятельно, важно, чтобы данное название совпадало с тем, которое вы пишите когда присваиваете этот шрифт чему-либо ( в моем случае на в строке 7 я присваиваю его всему сайту, потмоу что пишу font-family в теге body)*/
 }
+
+.g{
+
+/* margin-top: -13px;
+margin-right: -13px;
+border-top: 0;
+margin-bottom: -9px; */
+
+/* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+
+
+}
+ .g:hover{
+   
+    /* min-width:100px;
+    border-radius: 0px 0px 5px 5px; */
+ }
+
+.glav0{
+    position: relative;
+z-index: 999;
+
+}
+
 .glavooo{
     width: 100%;
     background-color: #2c3340;
+    z-index: 999;
 }
 
 .glavoo {
@@ -126,18 +151,20 @@ min-width: 120px;
     display: flex;
     justify-content: left;
     width: 20%;
-    /* margin-right: 5%;  */
-    /* background-color: blue;   */
+  
 }
 
 .logo {
     display: flex;
+    
+
     width: 120px;
     margin-left: 0px;
     /* padding-right: 30px;  */
     /* padding-right: 10%; */
     /* margin-right: 48px; */
     cursor: pointer;
+
 }
 
 /* выпадающий список при наведении */

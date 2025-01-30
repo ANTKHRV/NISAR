@@ -1,0 +1,51 @@
+
+@font-face {
+    /*подключаем шрифт, сначала скачиваем его и переносим либо всю папку либо конкретный файл шрифта в папку (у меня шрифты лежат в папке fonts)*/
+    src: url(/src/fonts/RobotoCondensed-Regular.ttf);
+    /*с помощью src вытаскиваем файл который нам нужен, пишем относительный путь к файлу шрифта, так как мы находимся в папке css в файле style, нужно выйти на папку выше (../) зайти в папку fonts (fonts/) и выбрать нужный файл, не забываем расширение .ttf*/
+    font-family: RobotoCondensed-Regular;
+    /*обязательно указываем название шрифта, его можно придумать самостоятельно, важно, чтобы данное название совпадало с тем, которое вы пишите когда присваиваете этот шрифт чему-либо ( в моем случае на в строке 7 я присваиваю его всему сайту, потмоу что пишу font-family в теге body)*/
+}
+
+
+@keyframes move-it {
+    0% {
+      background-position: initial;
+    }
+    100% {
+      background-position: 100px 0px;
+    }
+  }
+  
+  .content{
+    display: flex;
+    justify-content: center;
+    padding-top: 65px;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-family: RobotoCondensed-Regular;
+    font-weight: 500;
+    width: 100%;
+
+  }
+
+  .footer {  
+    
+    height: auto;
+    background: repeating-linear-gradient(
+    -45deg,
+    rgb(44, 150, 238) ,
+    rgb(47, 119, 178) 5%,
+    rgb(65, 113, 190) 0,
+    rgb(68, 138, 208) 5%
+  );
+    background-size: 9000px 9000px; 
+    
+    animation: move-it 1.5s linear infinite;
+    padding: 0;
+    margin: 0;
+    margin-top: -23px; 
+    padding-bottom: 65px;
+  }
+  
+  

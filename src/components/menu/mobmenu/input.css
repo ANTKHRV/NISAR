@@ -6,6 +6,91 @@
   /*обязательно указываем название шрифта, его можно придумать самостоятельно, важно, чтобы данное название совпадало с тем, которое вы пишите когда присваиваете этот шрифт чему-либо ( в моем случае на в строке 7 я присваиваю его всему сайту, потмоу что пишу font-family в теге body)*/
 }
 
+.dropdown-content1{
+  display: none;
+    color: #888787;
+    color: #9a9a9a;
+  padding-bottom: 0px;
+  cursor: pointer;
+  font-family: OpenSans;
+  font-size: 14px;
+  line-height: 2;
+  font-weight: 100;
+}
+
+.dropdown-content2{
+  display: none;
+ 
+
+  padding-bottom: 0px;
+  cursor: pointer;
+  font-family: OpenSans;
+  font-size: 14px;
+  line-height: 2;
+  font-weight: 100;
+}
+
+.dropdown-content3{
+  display: none;
+  color: #888787;
+  padding-bottom: 0px;
+  cursor: pointer;
+  font-family: OpenSans;
+  font-size: 14px;
+  line-height: 2;
+  font-weight: 100;
+}
+
+.dropdown-content2{
+  display: none;
+  color: #9a9a9a;
+  padding-bottom: 0px;
+  cursor: pointer;
+  font-family: OpenSans;
+  font-size: 14px;
+  line-height: 2;
+  font-weight: 100;
+}
+
+
+
+.dropdown-content1:hover{
+ 
+  color: #888787;
+  color: rgb(208, 208, 208);
+ 
+}
+
+.show {display: block;}
+
+.show2 {display: block;}
+
+.str2{
+width: 14px;
+height: 13px;
+color: #888787;
+padding-top: 8px;
+padding-right: 80px;
+}
+
+.t{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #888787;
+  cursor: pointer;
+  font-family: OpenSans;
+  font-size: 14px;
+  line-height: 2;
+  font-weight: 100;
+  
+  }
+
+  .t:hover{
+    color: rgb(208, 208, 208);
+    cursor: pointer;
+    }
+
 .input {
   border: 3px solid red;
 }
@@ -208,6 +293,16 @@ span {
 }
 
 @media screen and (max-width: 950px) {
+  
+  
+  
+.str2{
+  width: 14px;
+  height: 14px;
+  color: #888787;
+  padding-top: 8px;
+  padding-right: 40px;
+  }
   .obsh {
     width: 265px;
     padding-top: 0;

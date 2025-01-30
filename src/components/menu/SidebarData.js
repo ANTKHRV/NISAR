@@ -5,41 +5,36 @@ import React from 'react';
 
 
 export const SidebarData = [
+  
   {
-    title: 'О компании',
-    path: '/',
-    
-    // icon: <AiIcons.AiFillHome />,
-    cName: 'nav-text'
-  },
-  {
-    title: 'Услуги',
-    path: '/reports',
-    // icon: <IoIcons.IoIosPaper />,
-    cName: 'nav-text'
-  },
-  {
-    title: 'Продажа',
-    path: '/products',
-    // icon: <FaIcons.FaCartPlus />,
-    cName: 'nav-text'
-  },
-  {
-    title: 'Team',
-    path: '/team',
+    title: 'Покупки',
+    path: '/pokupki',
     // icon: <IoIcons.IoMdPeople />,
     cName: 'nav-text'
   },
   {
-    title: 'Messages',
-    path: '/messages',
+    title: 'Горяие предложения',
+    path: '/hotp',
     // icon: <FaIcons.FaEnvelopeOpenText />,
     cName: 'nav-text'
   },
   {
-    title: 'Support',
-    path: '/support',
+    title: 'Новости',
+    path: '/news',
+    // icon: <IoIcons.IoMdHelpCircle />,
+    cName: 'nav-text'
+  },
+  {
+    title: 'Контакты',
+    path: '/contacts',
+    // icon: <IoIcons.IoMdHelpCircle />,
+    cName: 'nav-text'
+  },
+  {
+    title: 'Требуются',
+    path: '/vacanciya',
     // icon: <IoIcons.IoMdHelpCircle />,
     cName: 'nav-text'
   }
+
 ];

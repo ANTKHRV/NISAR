@@ -169,7 +169,7 @@
     font-family: RobotoCondensed-Regular;
     margin: 20px 20px;
     margin-top: 0;
-    
+
 }
 
 .glav1:hover,
@@ -427,25 +427,21 @@
     .text {
         margin-top: 20px;
         margin-bottom: 0px;
-}
+    }
 
-.glavt3, .glavt2{
-    width: 100%;
-    text-align: start;
-    display: inline-block;
-}
+    .glavt3,
+    .glavt2 {
+        width: 100%;
+        text-align: start;
+        display: inline-block;
+    }
 
-.glavt2{
+    .glav1A {
+        align-items: center;
 
-    
-}
+    }
 
-.glav1A{
-    align-items: center;
-    
-}
-
-.glavvv {
-    padding: 0 3%;
-}
+    .glavvv {
+        padding: 0 3%;
+    }
 }
