@@ -45,7 +45,18 @@
   cursor: default;
 }
 
+.active-linkll0 {
+  color: rgb(208, 208, 208);
+  text-decoration: none;
+  cursor: default;
+}
+
 .notactive2222 {
+  text-decoration: none;
+  color: #9a9a9a;
+}
+
+.notactive22220 {
   text-decoration: none;
   color: #9a9a9a;
 }
