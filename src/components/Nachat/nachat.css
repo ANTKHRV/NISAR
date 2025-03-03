@@ -7,6 +7,16 @@
     /*обязательно указываем название шрифта, его можно придумать самостоятельно, важно, чтобы данное название совпадало с тем, которое вы пишите когда присваиваете этот шрифт чему-либо ( в моем случае на в строке 7 я присваиваю его всему сайту, потмоу что пишу font-family в теге body)*/
 }
 
+
+@font-face {
+    /*подключаем шрифт, сначала скачиваем его и переносим либо всю папку либо конкретный файл шрифта в папку (у меня шрифты лежат в папке fonts)*/
+    src: url(/src/fonts/RobotoCondensed-Light.ttf);
+    /*с помощью src вытаскиваем файл который нам нужен, пишем относительный путь к файлу шрифта, так как мы находимся в папке css в файле style, нужно выйти на папку выше (../) зайти в папку fonts (fonts/) и выбрать нужный файл, не забываем расширение .ttf*/
+    font-family: RobotoCondensed-Light;
+    /*обязательно указываем название шрифта, его можно придумать самостоятельно, важно, чтобы данное название совпадало с тем, которое вы пишите когда присваиваете этот шрифт чему-либо ( в моем случае на в строке 7 я присваиваю его всему сайту, потмоу что пишу font-family в теге body)*/
+}
+
+
 .zagO{
 	font-family: RobotoCondensed-Regular;
     color: #222;
@@ -46,6 +56,26 @@
 	font-size: 14px;
 	/* font-family: Helvetica; */
 	color: #222; 
+	outline:none;
+	padding: 0 10px;
+	
+  }
+
+  .inp1O1{
+	box-sizing: border-box; 
+	color: white;
+	width: 150px;
+	height: 40px;
+	margin: 0px 0px;
+	margin-bottom: 0px;
+	border: none;
+	border: 1px solid rgb(0, 164, 234);
+	border-radius: none;
+	font-size: 20px;
+	font-family: RobotoCondensed-Light;
+	font-weight: 100;
+	font-weight: 100;
+	background-color: #222;
 	outline:none;
 	padding: 0 10px;
   }

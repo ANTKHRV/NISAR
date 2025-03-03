@@ -11,7 +11,7 @@ import News from './pages/News/News';
 import Hotp from './pages/Hotp/Hotp'
 import Pokupki from './pages/Pokupki/Pokupki';
 import Doc from './pages/Doc/Doc';
-
+import Results from './pages/Results/Results'
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
   
@@ -27,6 +27,7 @@ const root = document.getElementById("root");
             <Route path="/hotp" element={<Hotp/>} />
             <Route path="/pokupki" element={<Pokupki/>} />
             <Route path="/documents" element={<Doc/>} />
+            <Route path="/results" element={<Results/>} />
           </Routes>
         </BrowserRouter>
  

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^1.7.9",
     "cra-template": "1.2.0",
     "install": "^0.13.0",
     "npm": "^11.0.0",
@@ -10,6 +11,7 @@
     "react-dom": "^18.3.1",
     "react-headroom": "^3.2.1",
     "react-scripts": "5.0.1",
+    "react-search-autocomplete": "^8.5.2",
     "react-sticky": "^6.0.3",
     "react-stickynode": "^5.0.1",
     "react-yandex-maps": "^4.6.0"

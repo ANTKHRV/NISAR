@@ -1,18 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import down from '../pic/down.png';
 import search from '../pic/search.png';
+import Search from '../../../Search';
 import logo from '../pic/logo.png';
 import menumodule from '../menu.module.css';
 import { NavLink } from "react-router";
 import '../../menu/activ.css';
 import './headroom.css';
 import Headroom from 'react-headroom';
+import { SimpleModal2 } from "../../../SimpleModal2/SimpleModal2";
 
 // import Sticky from 'react-stickynode';
 
 const setActive = ({isActive}) => isActive ? 'active-link' : 'notactive' ;
 const setActive22 = ({isActive}) => isActive ? 'active-linkl' : 'notactive222' ;
 const Menupc = () => {
+
+  const [modalInfoIsOpen, setModalInfoOpen] = useState(false);
 
   // const [show, setShow] = useState(true);
   // const [lastScrollY, setLastScrollY] = useState(0);
@@ -48,9 +52,6 @@ const Menupc = () => {
     <div className={menumodule.glav}>
 
 
-
-   
-
       <div className={menumodule.glavL}> <NavLink to='/'><img src={logo} alt='logo' className={menumodule.logo}></img>
       </NavLink> </div>
  <div className={menumodule.dropdown}>
@@ -83,7 +84,16 @@ const Menupc = () => {
       <NavLink to='/news' className={setActive}><div className={menumodule.glavA}>НОВОСТИ</div></NavLink>
       <NavLink to='/contacts' className={setActive}><div className={menumodule.glavA}>КОНТАКТЫ</div></NavLink>
       <NavLink to='/vacanciya' className={setActive}><div className={menumodule.glavA}>ТРЕБУЮТСЯ</div></NavLink>
-      <div className={menumodule.glavS}><img src={search} alt='search' className={menumodule.search}></img></div>
+      <div className={menumodule.glavS} >
+        <div onClick={() => setModalInfoOpen(true)}>
+          <img src={search} alt='search' className={menumodule.search}></img>
+        <SimpleModal2
+             isOpen={modalInfoIsOpen}
+             onClose={() => setModalInfoOpen(false)}>
+              <Search/>
+           </SimpleModal2> </div>
+        </div>
+
     </div> </div> </div> </div>
     </Headroom>
 </>
