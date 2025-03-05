@@ -12,7 +12,7 @@ import Footer from '../../components/footer/footer'
 import WindowCall from '../../components/WindowCall/WindowCall'
 // import Home from './pages/Home'
 // import Reports from './pages/Reports'
-import SearchBar from '../../SearchBar'
+import SearchResults from '../../SearchBar'
 import Home7 from './Home7'
 
 function Results() {
@@ -22,7 +22,7 @@ function Results() {
 <Header/>
 <Menu/>
 <Home7/>
-<SearchBar/>
+<SearchResults/> 
 <ScrollButton/>
 <WindowCall/>
 <Footer/>

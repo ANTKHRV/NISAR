@@ -14,10 +14,10 @@ export const SimpleModal2 = ({ isOpen, onClose, children }) => {
   if (event.target.classList.contains("modal2")) onClose();
 };
 
- useEffect(() => {
-   const body = document.querySelector('body');
-  body.style.overflow = isOpen ? 'hidden' : 'auto';
- }, [isOpen])
+//  useEffect(() => {
+//    const body = document.querySelector('body');
+//   body.style.overflow = isOpen ? 'hidden' : 'auto';
+//  }, [isOpen])
 
   return (
     <>

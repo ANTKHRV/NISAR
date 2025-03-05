@@ -10,6 +10,8 @@ import { SidebarData } from '../SidebarData';
 import './input.css';
 import '../menupc/headroom.css';
 import Headroom from 'react-headroom';
+import Search from '../../../Search/Search';
+import { SimpleModal2 } from "../../../SimpleModal2/SimpleModal2";
 
 
 const setActive22 = ({isActive}) => isActive ? 'active-linkll' : 'notactive2222' ;
@@ -22,6 +24,7 @@ const setActive225 = ({isActive}) => isActive ? 'active-linkll0' : 'notactive222
 
 const Mobmenu = () => {
 
+  const [modalInfoIsOpen, setModalInfoOpen] = useState(false);
 
   let myFunctionn = () => {
     Mennu.current.classList.toggle("show");
@@ -86,7 +89,14 @@ let Mennuu1 = React.createRef();
           <div className={menumodule.glavS}>
             <Link to='#' className='menu-bars'> <img src={menumob} alt='mobmen' className={menumodule.mobmen} onClick={showSidebar3}></img> </Link>
             <span className={menumodule.span}>МЕНЮ</span>
-            <img src={search} alt='search' className={menumodule.search}></img>
+            <div onClick={() => setModalInfoOpen(true)}>
+          <img src={search} alt='search' className={menumodule.search}></img>
+        <SimpleModal2
+             isOpen={modalInfoIsOpen}
+             onClose={() => setModalInfoOpen(false)}>
+              <Search/>
+           </SimpleModal2> </div>
+        
 
           </div>
         </div>

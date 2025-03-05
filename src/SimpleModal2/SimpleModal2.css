@@ -65,7 +65,7 @@ min-width: 100px;
   margin-top: 0px;  
   background-color: #2c3340 ;
   /* background-color: blue;  */
-  border-radius: 5px 5px 5px 5px;
+  border-radius: 0px 0px 5px 5px;
   overflow:scroll;
   transform: translateY(0px); 
   margin: 20px;

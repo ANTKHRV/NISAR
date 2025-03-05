@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router";
 import Vacanciya from './pages/Vakansiya/Vakansiya';
@@ -12,6 +11,7 @@ import Hotp from './pages/Hotp/Hotp'
 import Pokupki from './pages/Pokupki/Pokupki';
 import Doc from './pages/Doc/Doc';
 import Results from './pages/Results/Results'
+
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
   
@@ -27,7 +27,9 @@ const root = document.getElementById("root");
             <Route path="/hotp" element={<Hotp/>} />
             <Route path="/pokupki" element={<Pokupki/>} />
             <Route path="/documents" element={<Doc/>} />
-            <Route path="/results" element={<Results/>} />
+            <Route path="/search" element={<Results/>} />
+           
+           
           </Routes>
         </BrowserRouter>
  

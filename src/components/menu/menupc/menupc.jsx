@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import down from '../pic/down.png';
 import search from '../pic/search.png';
-import Search from '../../../Search';
+import Search from '../../../Search/Search';
 import logo from '../pic/logo.png';
 import menumodule from '../menu.module.css';
 import { NavLink } from "react-router";

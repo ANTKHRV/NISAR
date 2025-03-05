@@ -14,6 +14,21 @@
     /*обязательно указываем название шрифта, его можно придумать самостоятельно, важно, чтобы данное название совпадало с тем, которое вы пишите когда присваиваете этот шрифт чему-либо ( в моем случае на в строке 7 я присваиваю его всему сайту, потмоу что пишу font-family в теге body)*/
 }
 
+.zagsearch{
+  font-family: RobotoCondensed-Regular;
+  font-size: 1.6rem;
+  line-height: 0.7;
+  font-weight: 400;
+  /* color: #8b8b8b; */
+  margin-bottom: 0;
+}
+.taxtsearch{
+  font-size: 16px;
+font-family: OpenSans;
+font-weight: 300;
+line-height: 1.5;
+/* background-color: aquamarine; */
+}
 
 .glavvvv2 {
     display: none;
