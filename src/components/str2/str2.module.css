@@ -14,6 +14,11 @@
     /*обязательно указываем название шрифта, его можно придумать самостоятельно, важно, чтобы данное название совпадало с тем, которое вы пишите когда присваиваете этот шрифт чему-либо ( в моем случае на в строке 7 я присваиваю его всему сайту, потмоу что пишу font-family в теге body)*/
 }
 
+.capcha{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5px;
+}
 
 .glavvvv2 {
     display: none;
@@ -116,6 +121,7 @@
     margin-bottom: 20px;
     box-sizing: border-box;
     border-radius: 3px;
+    border: none;
     display: flex;
     justify-content: center;
     align-items: center;

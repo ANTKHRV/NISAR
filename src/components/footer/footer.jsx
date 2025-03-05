@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from "react"
 import footer from './footer.module.css'
 import phone from './phone.png';
 import adress from './adress.png';
@@ -7,8 +7,14 @@ import mail from './email.png';
 import check from './check.png';
 import wu from './wu.png'
 import ph from './ph.png'
+import Nachat from '../Nachat/nachat';
+import { SimpleModal } from "../../SimpleModal/SimpleModal";
+
 
 function Footer() {
+
+  const [modalInfoIsOpen, setModalInfoOpen] = useState(false);
+
   return (
     <div className={footer.glav}>
       <div className={footer.glavFO}>
@@ -67,9 +73,19 @@ function Footer() {
             <div className={footer.glav1A}>
               <div className={footer.glavF1}>
                 <img src={wu} alt='wu' className={footer.wu}></img>
-                <div className={footer.kn}>Открыть форму
-                  <img src={ph} alt='ph' className={footer.ph}></img></div>
+                <div onClick={() => setModalInfoOpen(true)} className={footer.kn}>Открыть форму
+                  <img
+                   src={ph} alt='ph' className={footer.ph}></img></div>
               </div>
+
+              
+            <SimpleModal
+             isOpen={modalInfoIsOpen}
+             onClose={() => setModalInfoOpen(false)}>
+               <Nachat/>
+          
+           </SimpleModal>
+           
               <div className={footer.glavFF1}>
               </div>
             </div> </div>
@@ -172,9 +188,17 @@ function Footer() {
           <div className={footer.glav1A}>
             <div className={footer.glavF1}>
               <img src={wu} alt='wu' className={footer.wu}></img>
-              <div className={footer.kn}>Открыть форму
+              <div onClick={() => setModalInfoOpen(true)} className={footer.kn}>Открыть форму
                 <img src={ph} alt='ph' className={footer.ph}></img></div>
             </div>
+
+            <SimpleModal
+             isOpen={modalInfoIsOpen}
+             onClose={() => setModalInfoOpen(false)}>
+               <Nachat/>
+          
+           </SimpleModal>
+
 
 
             <div className={footer.glavFF1}>
