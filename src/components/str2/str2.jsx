@@ -1,43 +1,13 @@
-import React, { useState } from "react"
-import { useRef } from 'react';
+import React from "react"
+import Form from "../formEmail/Form"
 import one from './str2.module.css'
 import '../Nachat/nachat.css'
-import { useNavigate } from "react-router";
-import emailjs from '@emailjs/browser';
-import ReCAPTCHA from "react-google-recaptcha";
+
 
 const Str2 = () => {
 
-  const navigate = useNavigate()
 
-  const [value, setValue] = useState()
-
-  const form = useRef();
-
-  const [buttonText, setButtonText] = useState("ПОДПИСАТЬСЯ");
-
-  const sendEmail = (e) => {
-
-    e.preventDefault();
-    setButtonText("ЗАГРУЗКА...");
-    setButtonText("ОТПРАВКА");
-    emailjs.sendForm('service_hmoh4pe', 'template_si5n3b9', form.current, 'pBgFTDGTqgd6JkT9M')
-      .then((result) => {
-        navigate("/");
-        // <Navigate  to={{
-        //  pathname: "/",
-
-        //  }} />;
-        setButtonText("ВЫ ПОДПИСАНЫ");
-        console.log(result.text);
-        e.target.reset();
-
-      }, (error) => {
-        console.log(error.text);
-        setButtonText("ОШИБКА ОТПРАВКИ");
-      });
-  }
-
+  // const [value, setValue] = useState()
 
   return (
 
@@ -62,18 +32,7 @@ const Str2 = () => {
                 <div className={one.onas3text}>Вы всегда можете быть в курсе новых поступлений флота, информации о «горячих» выгодных предложениях на продажу и получать уведомления об этом на электронную почту.</div>
                 <div className={one.onas3form}>
 
-                  <form ref={form} onSubmit={sendEmail} >
-
-                    <input type="email" name="email" className={one.inp} pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z])+$" placeholder="Введите ваш E-mail" maxLength={25} required
-                    />
-
-                    
-                      <button type="submit" className={one.onas3knop}>{buttonText}</button>
-                    
-                      <div className={one.capcha}>
-                    <ReCAPTCHA sitekey={process.env.REACT_APP_SITE_KEY} />
-                  </div>
-                  </form>
+                  <Form />
 
                 </div>
               </div>

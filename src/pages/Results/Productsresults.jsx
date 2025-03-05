@@ -18,18 +18,15 @@ const Productscontacts = () => {
       
       <div className={one.onastext}>
 
-
-
-
       </div>
 
       <div className={one.onas2}>Подписка на нашу рассылку</div>
       <div className={one.onas3}>
         <div className={one.onas3text}>Вы всегда можете быть в курсе новых поступлений флота, информации о «горячих» выгодных предложениях на продажу и получать уведомления об этом на электронную почту.</div>
         <div className={one.onas3form}>
-        <input className={one.inp} pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z])+$" type="email" name="email" placeholder="Введите ваш E-mail" maxLength={25} required
-          />
-        <div className={one.onas3knop}>ПОДПИСАТЬСЯ</div>
+      
+      <Form/>
+      
         </div>
         </div>
       </div>
