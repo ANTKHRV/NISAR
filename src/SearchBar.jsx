@@ -1,16 +1,14 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import { sampleData } from './sampleData';
+import { data } from './sampleData';
 import "./pages/Contacts/produucts.css"
 import one from './pages/Contacts/str2.module.css'
 
-const SearchResults = () => {
 
-  const query = new URLSearchParams(useLocation().search).get('query');
+  const Results = () => {
+    const { state } = useLocation();
+    const results = state?.results || [];
 
-  const filteredData = sampleData.filter((item) =>
-    item.title.toLowerCase().includes(query.toLowerCase())
-  );
 
   return (
 
@@ -24,19 +22,29 @@ const SearchResults = () => {
             <div className={one.glav}>
 
               <div className={one.glav1}>
-                <div className={one.onas}>Результаты поиска для: "{query}"</div>
+                <div className={one.onas}>Результаты </div>
 
                 <div className={one.onastext}>
-                  {filteredData.length ? (
-                    filteredData.map((item) => (
-                      <div key={item.id}>
-                        <p className={one.zagsearch}>{item.title}</p>
-                        <p className={one.taxtsearch}>{item.content}</p>
-                      </div>
-                    ))
-                  ) : (
-                    <p className={one.taxtsearch}>Ничего не найдено</p>
-                  )}
+                {results.length > 0 ? (
+        <ul>
+          {results.map(result => (
+             
+            <div className={one.glavsearchresult}  key={result.item.id}>
+             <p className={one.zagsearch}>{result.item.title}</p>
+             <p className={one.taxtsearch}>{result.item.content}</p>
+             <div className={one.glavref}>
+              <a className={one.href} href={result.item.description}>ПОДРОБНО</a>
+             </div>
+             {/* <p className={one.taxtsearch}>{result.item.description}</p> */}
+              {/* {result.item.image && <img className={one.pic} src={result.item.image} alt={result.item.title} />} */}
+              </div>
+              
+
+          ))}
+        </ul>
+      ) : (
+        <p className={one.taxtsearch}>Ничего не найдено</p>
+      )}
 
                 </div>
 
@@ -68,4 +76,4 @@ const SearchResults = () => {
   );
 };
 
-export default SearchResults;
+export default Results;

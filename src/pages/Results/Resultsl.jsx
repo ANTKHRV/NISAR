@@ -12,17 +12,17 @@ import Footer from '../../components/footer/footer'
 import WindowCall from '../../components/WindowCall/WindowCall'
 // import Home from './pages/Home'
 // import Reports from './pages/Reports'
-import SearchResults from '../../SearchBar'
+import Results from '../../SearchBar'
 import Home7 from './Home7'
 
-function Results() {
+function Resultsl() {
     return (
         <>
 
 <Header/>
 <Menu/>
 <Home7/>
-<SearchResults/> 
+<Results/> 
 <ScrollButton/>
 <WindowCall/>
 <Footer/>
@@ -31,4 +31,4 @@ function Results() {
   );
 }
 
-export default Results ;
+export default Resultsl ;
