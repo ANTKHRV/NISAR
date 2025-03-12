@@ -6,6 +6,7 @@ import clock from './clock.png';
 import mail from './email.png';
 import check from './check.png';
 import wu from './wu.png'
+import tg from './tg.png'
 import ph from './ph.png'
 import Nachat from '../Nachat/nachat';
 import { SimpleModal } from "../../SimpleModal/SimpleModal";
@@ -72,7 +73,10 @@ function Footer() {
           <div className={footer.glav3}>
             <div className={footer.glav1A}>
               <div className={footer.glavF1}>
+              {/* <div className={footer.wutg}> */}
                 <img src={wu} alt='wu' className={footer.wu}></img>
+                <img src={tg} alt='tg' className={footer.tg}></img>
+                
                 <div onClick={() => setModalInfoOpen(true)} className={footer.kn}>Открыть форму
                   <img
                    src={ph} alt='ph' className={footer.ph}></img></div>
@@ -187,7 +191,10 @@ function Footer() {
         <div className={footer.glav3}>
           <div className={footer.glav1A}>
             <div className={footer.glavF1}>
+              {/* <div className={footer.wutg}> */}
               <img src={wu} alt='wu' className={footer.wu}></img>
+              <img src={tg} alt='tg' className={footer.tg}></img>
+         
               <div onClick={() => setModalInfoOpen(true)} className={footer.kn}>Открыть форму
                 <img src={ph} alt='ph' className={footer.ph}></img></div>
             </div>

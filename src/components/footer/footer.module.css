@@ -205,6 +205,23 @@ font-weight: 700  ;
 .wu{
   width: 55px;
   margin-top: 0px;
+  padding-bottom: 10px;
+}
+
+.tg{
+  width: 50px;
+  margin-top: 0px;
+  padding-bottom: 15px;
+}
+
+.wutg{
+  width: 100%;
+ display: flex;
+ background-color: aqua;
+ /* flex-direction: column; */
+ align-items: center;
+ /* justify-content: center; */
+ /* align-items: center; */
 }
 
 @media screen and (max-width: 1280px) {

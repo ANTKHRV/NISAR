@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import Fuse from 'fuse.js';
+import { data } from '../../../sampleData';
 import menumodule from '../menu.module.css'
 import search from '../pic/search.png';
 import menumob from '../pic/menumob.png';
@@ -6,7 +9,6 @@ import str from '../pic/str.png';
 import logo from '../pic/logo.png';
 import * as AiIcons from 'react-icons/ai';
 import { Link, NavLink } from 'react-router';
-import { SidebarData } from '../SidebarData';
 import './input.css';
 import '../menupc/headroom.css';
 import Headroom from 'react-headroom';
@@ -48,7 +50,7 @@ let Mennuu1 = React.createRef();
   const [sidebar, setSidebar] = useState(false);
   const showSidebar3 = () => {
     setSidebar(true);
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = '';
     document.body.style.position = 'auto';
     document.body.style.width = '100%';
      document.body.style.height = '100vh';
@@ -69,7 +71,21 @@ let Mennuu1 = React.createRef();
 
 
 
-  // const showSidebar = () => setSidebar(!sidebar);
+  const [query, setQuery] = useState('');
+  const navigate = useNavigate();
+
+  const fuseOptions = {
+    keys: ['title', 'content'], // Поля, по которым будет осуществляться поиск
+    includeScore: true, // Включаем оценку совпадения (опционально)
+  };
+  
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    const fuse = new Fuse(data, fuseOptions);
+    const results = fuse.search(query);
+    navigate('/search', { state: { results } });
+  };
 
 
 
@@ -94,6 +110,7 @@ let Mennuu1 = React.createRef();
         <SimpleModal2
              isOpen={modalInfoIsOpen}
              onClose={() => setModalInfoOpen(false)}>
+              <div></div>
               <Search/>
            </SimpleModal2> </div>
         
@@ -101,15 +118,25 @@ let Mennuu1 = React.createRef();
           </div>
         </div>
       </Headroom>
-      <div className={sidebar ? 'nav-menu active' : 'nav-menu'} >
-        <nav className='obsh' >
+      <div className={sidebar ? 'nav-menu active' : 'nav-menu'}  >
+        <nav className='obsh'  >
 
           <ul className='nav-menu-items' >
 
             <span className='navbar-toggleg'>
               <li className='navbar-toggle'>
-                <input className='inp' name='search' type='text' placeholder='Поиск' ></input>
-                <img src={search} alt='search' className='search2'></img>
+              <form className='form' onSubmit={handleSearch}>
+                <input className='inp' name='search'
+                 placeholder='Поиск'
+                 value={query} 
+                 onChange={(e) => setQuery(e.target.value)} 
+                 type="text" 
+                 title="Разрешено использовать только пробелы и русские буквы"
+                 pattern="^[А-Яа-яЁё\s]+$" maxLength={20}
+                   /> <button className='but' onClick={handleSearch}>
+                <img src={search} alt='search' className='search2'></img></button>
+                </form>
+               
               </li>
               <Link to='#' className='menu-bars2'>
                 <AiIcons.AiOutlineClose onClick={showSidebar2} />
@@ -163,18 +190,7 @@ let Mennuu1 = React.createRef();
             ><NavLink to='/vacanciya' className={setActive224}> Требуются</NavLink>
             <img src={str} alt='str' className='str2'></img>
             </div>
-            {SidebarData.map((item, index) => {
-              return (
-                <li key={index} className={item.cName}>
-                  <Link to={item.path}>
-                    {item.icon}
-                    <span onClick={showSidebar3}>{item.title} </span>
-                    {/* &lt; */}
-                  </Link>
-                  <img src={str} alt='str' className='str'></img>
-                </li>
-              );
-            })}
+            
           </ul>
         </nav>
 

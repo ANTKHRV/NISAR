@@ -45,6 +45,13 @@
         padding-left: 5px;
     }
 
+    .tg{
+        margin-top: 1px;
+        width: 24px;
+        height: 24px;
+        padding-left: 5px;
+    }
+
     @media screen and (max-width: 640px) {
         .glav{
             height: 77px;
