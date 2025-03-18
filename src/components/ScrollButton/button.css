@@ -1,0 +1,23 @@
+/* button:hover::after,  button:focus::after,  button:active::after, button:hover::after, .uk-button-primary:focus::after, .uk-button-primary:active::after, .uk-button-primary.uk-active::after, .uk-button-secondary:hover::after, .uk-button-secondary:focus::after, .uk-button-secondary:active::after, .uk-button-secondary.uk-active::after, .uk-button-danger:hover::after, .uk-button-danger:focus::after, .uk-button-danger:active::after, .uk-button-danger.uk-active::after, .uk-button-extra:hover::after, .uk-button-extra:focus::after, .uk-button-extra:active::after, .uk-button-extra.uk-active::after {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  button::after,  button::after,  button::after,  button::after,  button::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    height: 0;
+    width: 100%;
+    top: 50%;
+    left: 0%;
+    background-color: rgba(255,255,255,0.2);
+    transition: all 0.2s linear;
+  }
+  ::selection {
+    background: #39f;
+    color: #fff;
+    text-shadow: none;} */
