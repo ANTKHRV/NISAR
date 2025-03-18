@@ -70,8 +70,8 @@ const Mobmenu = () => {
             {/* </Link> */}
             
             <span className={menumodule.span}>МЕНЮ</span>
-            <div onClick={() => setModalInfoOpen(true)}>
-          <img src={search} alt='search' className={menumodule.search}></img>
+            <div >
+          <img onClick={() => setModalInfoOpen(true)} src={search} alt='search' className={menumodule.search}></img>
          
           <SimpleModal2
              isOpen={modalInfoIsOpen}

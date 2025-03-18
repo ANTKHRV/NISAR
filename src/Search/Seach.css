@@ -1,6 +1,6 @@
 .searcH{
     display: flex;
-    width: 150px;
+    width: 100%;
     height: 80px;
     align-items: center;
     justify-content: start;
