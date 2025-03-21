@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { useRef } from 'react';
 import one from '../../components/str2/str2.module.css'
-import '../Nachat/nachat.css'
+// import '../Nachat/nachat.css'
 import { useNavigate } from "react-router";
 import emailjs from '@emailjs/browser';
 import ReCAPTCHA from "react-google-recaptcha";
@@ -42,7 +42,7 @@ const Form = () => {
     return (
 
         <div>
-            <form ref={form} onSubmit={sendEmail} >
+            <form className={one.fff} ref={form} onSubmit={sendEmail} >
 
                 <input type="email" name="email" className={one.inp} pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z])+$" placeholder="Введите ваш E-mail" maxLength={25} required
                 />

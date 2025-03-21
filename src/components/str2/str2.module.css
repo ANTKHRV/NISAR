@@ -14,6 +14,64 @@
     /*обязательно указываем название шрифта, его можно придумать самостоятельно, важно, чтобы данное название совпадало с тем, которое вы пишите когда присваиваете этот шрифт чему-либо ( в моем случае на в строке 7 я присваиваю его всему сайту, потмоу что пишу font-family в теге body)*/
 }
 
+.glavref{
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  
+}
+
+.glavsearchresult{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.href{
+
+  padding:10px 30px;
+  background: #00a0e3 ;
+  text-decoration: none;
+  color: white;
+  font-size: .875rem;
+  border-radius: 5px;
+
+}
+
+.href:hover{
+  background: #1cbbff ;
+
+}
+.pic{
+  width: 100px;
+}
+
+.zagsearch{
+  font-family: RobotoCondensed-Regular;
+  font-size: 1.6rem;
+  line-height: 0.7;
+  font-weight: 400;
+  /* color: #8b8b8b; */
+  margin-bottom: 0;
+}
+.taxtsearch{
+  font-size: 16px;
+font-family: OpenSans;
+background-color: brown;
+font-weight: 300;
+line-height: 1.5;
+margin-bottom: 15px;
+/* background-color: aquamarine; */
+}
+
+.fff{
+
+  width: 100%;
+  box-sizing: border-box;
+  
+
+ 
+}
 .capcha{
   display: flex;
   justify-content: center;
@@ -47,6 +105,7 @@
 
 
 .glav {
+  
     justify-items: stretch;
     align-items: stretch;
     row-gap: 22px;
@@ -89,15 +148,21 @@
   padding-top: 10px;
   border-radius: 5px;
   height: auto;
+  position: relative;
+  z-index: 888;
+  
   }
 
   .onas3form{
     margin-top: 25px;
     display: flex;
+  
     flex-direction: column;
     justify-content: center;
     align-items: center;
     /* background-color: bisque; */
+  
+    
   }
 
   .inp{
@@ -112,7 +177,8 @@
     transition: .2s ease-in-out;
     transition-property: all;
     transition-property: color,background-color,border;
-    width: 350px;
+    max-width: 350px;
+    width: 100%;
     box-sizing: border-box;
   }
 
@@ -165,6 +231,7 @@ font-size: 16px;
 font-family: OpenSans;
 font-weight: 300;
 line-height: 1.5;
+
 }
 
   .glav1 {
@@ -281,16 +348,20 @@ line-height: 1.5;
 @media screen and (max-width: 695px) {
  
   .onas3knop{
-width: 210px;
+
+max-width: 100% ;
+width: 310px;
+box-sizing: border-box;
   }
 
   .inp{
-    width: auto;
+    max-width: 350px;
+    min-width: 200px;
   }
     
     .glav1{
         width: 100%;
-        min-width: 220px;
+        min-width: 210px;
         max-width: 600px;
 }
 
@@ -309,5 +380,11 @@ width: 210px;
 
     .onas, .onas2{
         font-size: 1.2rem;
+    }
+
+    .fff{
+
+      width: 100%;
+      box-sizing: border-box;
     }
 }

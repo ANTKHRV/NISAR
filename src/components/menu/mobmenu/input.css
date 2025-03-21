@@ -185,7 +185,7 @@ transition: background-color 5000s ease-in-out 3000s;
 }
 
  .obsh{
-  background-color: #232323;
+  background-color: #222;
   width: 350px;
   transition: 500ms;
  /* background-color: aqua; */
@@ -252,8 +252,8 @@ transition: background-color 5000s ease-in-out 3000s;
 
 .navbar-toggle {
   background-color: #222;
-  width: 100%;
-  max-width: 185px;
+
+  width: 195px;
   height: 40px;
   display: flex;
   justify-content: space-between;
@@ -268,8 +268,8 @@ transition: background-color 5000s ease-in-out 3000s;
   display: flex;
   justify-content: space-between;
   text-decoration: none;
-  /* width: 190px; */
-  /* background-color: aquamarine; */
+ width: 100%;
+
   padding-bottom: 20px;
 
 }

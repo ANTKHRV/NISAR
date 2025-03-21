@@ -94,6 +94,15 @@
 
     @media screen and (max-width: 500px) {
         .home {
+       
+            background-image: linear-gradient(to right, rgba(16, 134, 255, .80), rgba(0, 0, 0, .30), rgba(16, 134, 255, .80)), url(../Vakansiya/baners.png) !important;
+            background-repeat:repeat-x;
+            background-position: center center !important;
+            position: relative !important;
+            background-attachment: fixed !important;
+            background-size:cover ;
+            width: auto;
+            
             margin-top: 0px;
         }
     }

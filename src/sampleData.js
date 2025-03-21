@@ -12,7 +12,7 @@ export const data = [
     { id: 3,
       description: 'http://localhost:3000/documents',
       title: 'Ольга',
-      content: 'Писька а также жопа ебаная', 
+      content: '8984777774', 
       image: require('./components/menu/pic/logo.png') },
     // Добавьте больше записей по необходимости
   ];

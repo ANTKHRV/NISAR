@@ -27,10 +27,10 @@ const scrollUp =() => {
 }
 
 	return (    
-        <div className={v.Button1}>
+        <div className={v.on1}>
 
             {backToTopButton && (
-                <button className={v.b2} onClick={scrollUp}>^</button>
+                    <div className={v.n2}>  <div className={v.n1}>   <button className={v.b2} onClick={scrollUp}>^</button>   </div></div>
             )}
 
         </div>

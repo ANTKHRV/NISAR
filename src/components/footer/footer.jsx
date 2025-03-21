@@ -41,7 +41,7 @@ function Footer() {
                     Телефоны:
                   </span>
                   <span className={footer.span2}>
-                    +79377169383</span>
+                    +7985777777</span>
                 </div></div>
             </div> </div>
           <div className={footer.glav2}>
@@ -151,7 +151,7 @@ function Footer() {
                   Телефоны:
                 </span>
                 <span className={footer.span2}>
-                  +79377169383</span>
+                +7985777777</span>
               </div></div>
           </div> </div>
         <div className={footer.glav2}>

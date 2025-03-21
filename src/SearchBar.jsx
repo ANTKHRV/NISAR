@@ -22,11 +22,11 @@ import one from './pages/Contacts/str2.module.css'
             <div className={one.glav}>
 
               <div className={one.glav1}>
-                <div className={one.onas}>Результаты </div>
+                <div className={one.onas}>Результаты</div>
 
                 <div className={one.onastext}>
                 {results.length > 0 ? (
-        <ul>
+        <ul className={one.ulg}>
           {results.map(result => (
              
             <div className={one.glavsearchresult}  key={result.item.id}>
@@ -35,8 +35,7 @@ import one from './pages/Contacts/str2.module.css'
              <div className={one.glavref}>
               <a className={one.href} href={result.item.description}>ПОДРОБНО</a>
              </div>
-             {/* <p className={one.taxtsearch}>{result.item.description}</p> */}
-              {/* {result.item.image && <img className={one.pic} src={result.item.image} alt={result.item.title} />} */}
+            
               </div>
               
 

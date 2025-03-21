@@ -1,7 +1,7 @@
 
 
 // import './App.css';
-// import React from 'react'
+ import React from 'react'
 // import ReactDOM from 'react-dom/client';
 // import { Routes, Route,  Navigate, useLocation } from "react-router-dom";
 import Header from '../../components/header/header'
