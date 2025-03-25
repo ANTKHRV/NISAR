@@ -92,7 +92,7 @@ top:40vh;
 left: 1%;
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 color: rgb(118, 116, 116);
-z-index: 999;
+z-index: 3000 ;
 
 background-size: contain;
 height: 140px;
@@ -133,7 +133,7 @@ border-radius: 5px;
     top: 139px;
 height: 100%;
  display: flex;
- z-index: 998;
+
  font-size: 1rem;
  justify-content: right;
  align-items: center;
@@ -221,7 +221,7 @@ height: 100%;
   
   .al{
    width: 100%; 
-      position: relative;
+    
       top: 89px;
   height: 100%;
    display: flex;

@@ -68,6 +68,8 @@ margin-bottom: 15px;
 
   width: 100%;
   box-sizing: border-box;
+ 
+ 
   
 
  
@@ -149,17 +151,18 @@ margin-bottom: 15px;
   border-radius: 5px;
   height: auto;
   position: relative;
-  z-index: 888;
-  
+z-index: 2500;
+
   }
 
   .onas3form{
     margin-top: 25px;
     display: flex;
-  
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
     /* background-color: bisque; */
   
     
@@ -308,6 +311,9 @@ line-height: 1.5;
 }
 
 @media screen and (max-width: 1050px) {
+  .onas3{
+
+  }
 
   .glavvv {
 
