@@ -1,0 +1,40 @@
+.headroom {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  }
+  .headroom.headroom--unfixed {
+    position: relative;
+    transform: translateY(0);
+  }
+  .headroom--scrolled {
+    transition: transform 500ms ease-in-out;
+  }
+  .headroom--unpinned {
+    position: fixed;
+    transform: translateY(-168%);
+  }
+  .headroom--pinned {
+    position: fixed;
+    top:0;
+    transform: translateY(0%);
+  }
+
+  @media screen and (max-width: 1080px) {
+    .headroom--unpinned {
+        position: fixed;
+        transform: translateY(-169%);
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    .headroom--unpinned {
+        position: fixed;
+        transform: translateY(-190px);
+      }
+  }
+  @media screen and (max-width: 500px) {
+    .headroom--unpinned {
+        position: fixed;
+        transform: translateY(-200%);
+      }
+  }

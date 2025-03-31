@@ -1,0 +1,333 @@
+@font-face {
+  /*подключаем шрифт, сначала скачиваем его и переносим либо всю папку либо конкретный файл шрифта в папку (у меня шрифты лежат в папке fonts)*/
+  src: url(/src/fonts/OpenSans.ttf);
+  /*с помощью src вытаскиваем файл который нам нужен, пишем относительный путь к файлу шрифта, так как мы находимся в папке css в файле style, нужно выйти на папку выше (../) зайти в папку fonts (fonts/) и выбрать нужный файл, не забываем расширение .ttf*/
+  font-family: OpenSans;
+  /*обязательно указываем название шрифта, его можно придумать самостоятельно, важно, чтобы данное название совпадало с тем, которое вы пишите когда присваиваете этот шрифт чему-либо ( в моем случае на в строке 7 я присваиваю его всему сайту, потмоу что пишу font-family в теге body)*/
+}
+
+body {
+  background: repeating-linear-gradient(-45deg,
+      rgb(44, 150, 238),
+      rgb(47, 119, 178) 5%,
+      rgb(65, 113, 190) 0,
+      rgb(35, 76, 118) 5%);
+  background-size: 10000px 10000px;
+
+  animation: move-it 1.5s linear infinite;
+  padding: 0;
+  margin: 0;
+
+
+}
+
+.ls2 {
+  padding-top: 20px;
+  position: absolute;
+  transform: rotateX('20px');
+  line-height: 1.3;
+  font-family: O;
+  font-weight: 900;
+  color: hsl(0, 0%, 4%);
+  font-size: 1.4rem;
+  z-index: 800;
+  background-image: url(./components/baner/278.gif);
+  background-size: cover;
+  height: 210px;
+  width: 230px;
+
+  font-family: OpenSans;
+}
+
+.ptext {
+  padding-top: 89px;
+  text-align: center;
+  font-weight: 600;
+  color: hsl(208, 83%, 18%);
+
+}
+
+.ptext2g {
+  width: 100%;
+}
+
+.ptext3 {
+  padding-top: 0px;
+  text-align: center;
+  font-weight: 600;
+  color: hsl(210, 40%, 98%);
+  font-size: 16px;
+  line-height: 1;
+  padding: 5px;
+
+}
+
+.ptext22 {
+  margin-top: 110px;
+  margin-left: 55px;
+  cursor: pointer;
+  border: 1px solid black;
+  background-color: rgb(33, 163, 227);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, .60), rgba(0, 0, 0, .10), rgba(255, 102, 0, .0));
+  width: 100%;
+  max-width: 120px;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%, 0.9);
+}
+
+.ptext22:hover {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, .60), rgba(0, 0, 0, .10), rgba(255, 102, 0, .0));
+}
+
+.ptext2 {}
+
+.ls {
+  position: fixed;
+  top: 40vh;
+  left: 1%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(118, 116, 116);
+  z-index: 3000;
+  background-size: contain;
+  height: 140px;
+  width: 140px;
+
+
+}
+
+
+
+.bu {
+  cursor: pointer;
+  bottom: 35px;
+  left: 0px;
+  background: none;
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  border: none;
+  color: #acacac;
+  font-size: 23px;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  background-color: hsl(208, 76%, 53%, 0);
+  border-radius: 5px;
+  min-height: 0px;
+}
+
+
+.bu:hover {
+  color: white;
+}
+
+.al {
+  width: 100%;
+  position: relative;
+  top: 139px;
+  height: 100%;
+  display: flex;
+  font-size: 1rem;
+  justify-content: right;
+  align-items: center;
+
+
+}
+
+.alert {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 577px;
+  min-width: 444px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 0px solid #000000;
+  border-radius: 5px;
+  padding: 40px;
+  margin: 0px 0;
+  font-size: 16px;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-right: 100px;
+  transition: opacity 300ms ease-in-out;
+  font-family: OpenSans;
+  min-height: 250px;
+  padding: 20px;
+  height: 300px;
+
+}
+
+.fade-enter {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.fade {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  /* плавный переход */
+}
+
+.visible {
+  opacity: 1;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+@media screen and (max-width: 1175px) {
+
+
+  .bu {
+    bottom: 390px;
+    left: 5px;
+    background: none;
+    position: relative;
+    display: flex;
+    border: none;
+    color: #acacac;
+
+
+    align-items: start;
+    width: 30px;
+
+    border-radius: 5px;
+    min-height: 0px;
+  }
+
+  .al {
+    width: 100%;
+
+    top: 89px;
+    height: 100%;
+    display: flex;
+
+    font-size: 1rem;
+    justify-content: right;
+    align-items: center;
+
+
+  }
+
+  .alert {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 377px;
+    min-width: 488px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 0px solid #000000;
+    border-radius: 5px;
+    padding: 40px;
+    margin: 0px 0;
+    font-size: 16px;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-right: 100px;
+    transition: opacity 300ms ease-in-out;
+    font-family: OpenSans;
+    min-height: 250px;
+    padding: 20px;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 1001px) {
+
+
+  .bu {
+    bottom: 35px;
+    background: none;
+    position: relative;
+    display: flex;
+    border: none;
+
+    left: 0px;
+    justify-content: center;
+    align-items: start;
+    width: 30px;
+
+    border-radius: 5px;
+    min-height: 0px;
+  }
+
+  .al {
+    width: 100%;
+    position: relative;
+    top: 17px;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+
+  .alert {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 277px;
+    min-width: 310px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 0px solid #000000;
+    border-radius: 5px;
+    padding: 40px;
+    margin: 0px 0;
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+
+    transition: opacity 300ms ease-in-out;
+    font-family: OpenSans;
+    min-height: 270px;
+    padding: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+.ptext22 {
+  margin-top: 110px;
+  margin-left: 55px;
+  cursor: pointer;
+  border: 1px solid black;
+  background-color: rgb(33, 163, 227);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, .60), rgba(0, 0, 0, .10), rgba(255, 102, 0, .0));
+  width: 100%;
+  max-width: 129px;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%, 0.9);
+}
+}
+.fg{
+  display: flex;
+}

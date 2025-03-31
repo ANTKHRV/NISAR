@@ -1,0 +1,75 @@
+@font-face {
+    /*подключаем шрифт, сначала скачиваем его и переносим либо всю папку либо конкретный файл шрифта в папку (у меня шрифты лежат в папке fonts)*/
+    src: url(/src/fonts/OpenSans.ttf);
+    /*с помощью src вытаскиваем файл который нам нужен, пишем относительный путь к файлу шрифта, так как мы находимся в папке css в файле style, нужно выйти на папку выше (../) зайти в папку fonts (fonts/) и выбрать нужный файл, не забываем расширение .ttf*/
+    font-family: OpenSans;
+    /*обязательно указываем название шрифта, его можно придумать самостоятельно, важно, чтобы данное название совпадало с тем, которое вы пишите когда присваиваете этот шрифт чему-либо ( в моем случае на в строке 7 я присваиваю его всему сайту, потмоу что пишу font-family в теге body)*/
+}
+
+
+    .glav {
+        background-color: rgb(0, 164, 234);
+        /* background-image: linear-gradient(to top, rgba(0, 160, 227, .90), rgba(0, 0, 0, .02), rgba(0, 0, 0, .02), rgba(0, 160, 227, .90)) !important; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 47px;
+
+    }
+
+    .glavA {
+        cursor: pointer;
+        font-family: OpenSans;
+        font-weight: 100;
+        overflow-x: hidden;
+        color: white;
+        text-align: center;
+        align-items: center;
+        font-size: 15px;
+        letter-spacing: 0.002em ;
+        text-decoration: none;
+    }
+
+    .glavA:hover {
+        text-decoration: underline;
+    }
+
+    .tel {
+        width: 22px;
+        height: 18px;
+        padding-right: 4px;
+    }
+
+    .wu {
+        width: 27px;
+        height: 27px;
+        padding-left: 5px;
+    }
+
+    .tg{
+        margin-top: 1px;
+        width: 24px;
+        height: 24px;
+        padding-left: 5px;
+        
+    }
+    .tga{
+        margin-top: 1px;
+        width: 24px;
+        height: 24px;
+    }
+
+    @media screen and (max-width: 640px) {
+        .glav{
+            height: 77px;
+            align-items: start;
+            padding-top: 12px;
+        }
+
+        .tel{
+            margin-top: 4px;
+        }
+        .glavA{
+            margin-top: 2px;
+        }
+    }

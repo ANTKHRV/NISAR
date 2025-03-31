@@ -1,0 +1,288 @@
+@font-face {
+  /*подключаем шрифт, сначала скачиваем его и переносим либо всю папку либо конкретный файл шрифта в папку (у меня шрифты лежат в папке fonts)*/
+  src: url(/src/fonts/RobotoCondensed-Regular.ttf);
+  /*с помощью src вытаскиваем файл который нам нужен, пишем относительный путь к файлу шрифта, так как мы находимся в папке css в файле style, нужно выйти на папку выше (../) зайти в папку fonts (fonts/) и выбрать нужный файл, не забываем расширение .ttf*/
+  font-family: RobotoCondensed-Regular;
+  /*обязательно указываем название шрифта, его можно придумать самостоятельно, важно, чтобы данное название совпадало с тем, которое вы пишите когда присваиваете этот шрифт чему-либо ( в моем случае на в строке 7 я присваиваю его всему сайту, потмоу что пишу font-family в теге body)*/
+}
+
+
+.capcha{
+	display: flex;
+  justify-content: center;
+	margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.GL{
+  margin-top: 45px;
+  /* background-color: aquamarine; */
+  padding: 0px 20px;
+}
+
+.obsh{
+  
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  }
+  
+  .i{
+    margin-bottom: 10px;
+    min-width: 100%;
+    width: 100%;
+  }
+
+  .knop{
+    margin-left: 0px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    min-width: 175px;
+    width: 100%; 
+    height: 55px;
+    background-color: rgb(0, 164, 234);
+    color: white ;
+    border-radius: 5px;
+    font-size: 14px;
+    font-size: .875rem;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    font-family: RobotoCondensed-Regular;
+  }
+
+  .knop:hover{
+    /* background-color: rgb(113, 31, 163); */
+  }
+
+.Tt{
+  width: 100%;
+  padding-top: 0px;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: left;
+  color: #666;
+  font-family: RobotoCondensed-Regular;
+  padding-bottom: 35px;  
+}
+
+.R{
+  font-size: 12px;
+}
+
+.spanN{
+  cursor: pointer;
+  border-bottom: 1px solid #666;
+  color: #666;
+  text-decoration: none;
+}
+
+.spanN1{
+color:  rgb(13, 130, 66);
+font-weight: 600;
+}
+
+.spanN:hover{
+  border:none
+}
+
+.ui{
+  width: 100%;
+  font-family: RobotoCondensed-Regular;
+  font-size: 16px;
+  font-weight: 100;
+  text-align: center;
+  padding-bottom: 20px;
+  color: #222;
+  line-height: 1.4;
+}
+
+.name100{
+  width: 124px;
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  top:145px;
+  border-radius: 5px;
+  margin-left: 5%;
+  padding: 3px 5px;
+  text-align: center;  
+  color: #666;
+  font-family: RobotoCondensed-Regular;     
+  font-size: 14px;
+}
+
+.name100N{
+  width: 110px;
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  top:83px;
+  border-radius: 5px;
+  margin-left: 5%;
+  padding: 3px 5px;
+  text-align: center;  
+  color: #666;
+  font-family: RobotoCondensed-Regular;
+  font-size: 14px;
+}
+
+.name100E{
+  width: 120px;
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  top:210px;
+  border-radius: 5px;
+  margin-left: 5%;
+  padding: 3px 5px;
+  text-align: center;  
+  color: #666;
+  font-family: RobotoCondensed-Regular;
+  font-size: 14px;
+}
+
+
+@media screen and (max-width: 580px) {
+
+  .GL{
+    margin-top: 28px;
+  }
+
+  .obsh{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    }
+    
+    .knop{
+      margin-left: 0px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      min-width: 175px;
+      width: 100%; 
+     
+      color: white ;
+      border-radius: 5px;
+     
+      border: none;
+    }
+  
+    .name100{
+      width: 124px;
+      display: flex;
+      flex-wrap: nowrap;
+      position: absolute;
+      background-color: rgb(255, 255, 255);
+      top:128px;
+      border-radius: 5px;
+      margin-left: 5%;
+      padding: 3px 5px;
+      text-align: center;  
+      color: #666;
+      /* font-family: Helvetica; */
+      font-size: 14px;
+    }
+
+    .name100E{
+      width: 120px;
+      display: flex;
+      flex-wrap: nowrap;
+      position: absolute;
+      background-color: rgb(255, 255, 255);
+      top:192px;
+      border-radius: 5px;
+      margin-left: 5%;
+      padding: 3px 5px;
+      text-align: center;  
+      color: #666;
+      /* font-family: Helvetica; */
+      font-size: 14px;
+    }
+
+    .name100N{
+      width: 110px;
+      display: flex;
+      flex-wrap: nowrap;
+      position: absolute;
+      background-color: rgb(255, 255, 255);
+      top:66px;
+      border-radius: 5px;
+      margin-left: 5%;
+      padding: 3px 5px;
+      text-align: center;  
+      color: #666;
+      /* font-family: Helvetica; */
+      font-size: 14px;
+    }
+    
+  .Tt{
+    padding-bottom: 15px;
+  }
+  }
+
+    @media screen and (max-width: 502px) {
+
+    
+  }
+
+    @media screen and (max-width: 424px) {
+.zag3{
+  padding-top: 5px;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 2.5%;
+  color: #222;
+  font-size: 16px;
+  /* font-family: Helvetica; */
+  padding-bottom: 20px;
+}
+
+}
+@media screen and (max-width: 383px) {
+
+  .zag2{
+    padding-bottom: 10px;
+  }
+  
+  .zag3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   padding-bottom: 16px; 
+  } 
+
+  .zag33{
+    padding: 0;
+  }
+
+  .zag43{
+    padding: 0;
+    padding-top: 4px;
+    font-size: 15px;
+  }
+
+  .GLAV{
+    width: 100%;
+    /* background-color: rgb(126, 126, 210);  */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 22px;
+   }
+   
+  }
+
+

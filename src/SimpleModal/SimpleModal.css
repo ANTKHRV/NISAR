@@ -1,0 +1,231 @@
+* {
+ 
+}
+
+
+.modal {
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;  
+  transition: opacity 0.3s;
+  z-index: 6000;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+/* 
+.modal:target {
+  display: block;
+} */
+
+.modal::-webkit-scrollbar {
+  display: none;
+}
+
+.modal{
+  
+-ms-overflow-style: none;  /* IE и Edge */
+scrollbar-width: none;  /* Firefox */
+}
+
+
+.modal-wrapper {
+ position: fixed; 
+ height: 94%;
+top:0px;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ /* align-items: flex-end; */
+ /* bottom: 66px;  */
+ right: 0%;
+ z-index: 988; 
+}
+
+.nnn{
+  
+  width: 600px;
+  max-width: 100%;
+  min-width: 300px;
+  position:relative;
+  height: 94%;  
+  height: 83%;
+  max-height:515px;
+  /* display: flex;
+  align-items: end; */
+  margin-bottom: 0px; 
+  margin-top: 0px;  
+  background-color: white;
+  /* background-color: blue;  */
+  border-radius: 5px 5px 5px 5px;
+  overflow:scroll;
+  transform: translateY(0px); 
+  margin: 20px;
+  z-index: 13333;
+  /* background-color: white;} */
+}
+
+  .nnn::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nnn{
+  -ms-overflow-style: none;  /* IE и Edge */
+  scrollbar-width: none;  /* Firefox */
+  }
+
+.modal-content {
+height: auto;
+}
+
+ .modal-close-button {
+  border: 0px;
+  position: fixed;
+  top: 19px;
+  right: 19px;
+  width: 35px;
+  height: 27px;
+  /* padding: 10px; */
+  background-color: rgb(52, 29, 29, 0); 
+  z-index: 12222;
+  cursor: pointer;
+ 
+}
+
+/* open */
+
+.modal--entering,
+.modal--entered {
+  opacity: 1;
+}
+
+.modal--entering .modal-content,
+.modal--entered .modal-content {
+  transform: translateY(0px); 
+  
+}
+
+/* close */
+
+.modal--exiting,
+.modal--exited {
+  opacity: 1;
+}
+
+.modal--exiting .modal-content,
+.modal--exited .modal-content {
+
+  /* transform: translateY(-350px); */
+   /* transform: translateX(0px);
+  
+  transform: translateY(0px);  */
+}
+.modal3 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  width: 100vm;
+  height: 100vh;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  /* opacity: 0; */
+  overflow: hidden;
+  overflow-y: auto;
+  transition: opacity 0.3s;
+  z-index: 15999;
+}
+
+.modalwrapper3s {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+  z-index: 15999;
+}
+
+.modalcontent3s {
+  position: relative;
+  margin: 20px;
+  width: 100%;
+  max-width: 353px;
+  min-width: 290px;
+  height: auto;
+  /* max-height: 390px;
+  min-height: 350px; */
+  border-radius: 20px;
+  background-color:#ffffff;
+  padding: 0px 3.7% 0px 3.7%;
+  /* transform: translateY(-50px); */
+  transition: opacity 0.3s, transform 0.3s;
+  z-index: 15999;
+}
+
+.modalclosebutton3s {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  z-index: 15999;
+}
+
+
+
+/* open */
+
+.modal3--entering,
+.modal3--entered {
+  opacity: 1;
+}
+
+.modal3--entering .modal-content,
+.modal3--entered .modal-content {
+  transform: translateY(0);
+}
+
+/* close */
+
+.modal3--exiting,
+.modal3--exited {
+  opacity: 0;
+}
+
+.modal3--exiting .modal-content,
+.modal3--exited .modal-content {
+  transform: translateY(-50px);
+}
+
+@media screen and (max-width: 580px) {
+
+  .modal-close-button {
+    border: 0px;
+    position: fixed;
+    top:  9px;
+    right: 14px;
+    width: 35px;
+    height: 27px;
+    /* padding: 10px; */
+    background-color: rgb(52, 29, 29, 0); 
+    z-index: 12222;
+    cursor: pointer;
+   
+  }
+
+}

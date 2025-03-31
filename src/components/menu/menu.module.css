@@ -1,0 +1,407 @@
+@font-face {
+    /*подключаем шрифт, сначала скачиваем его и переносим либо всю папку либо конкретный файл шрифта в папку (у меня шрифты лежат в папке fonts)*/
+    src: url(/src/fonts/RobotoCondensed-Regular.ttf);
+    /*с помощью src вытаскиваем файл который нам нужен, пишем относительный путь к файлу шрифта, так как мы находимся в папке css в файле style, нужно выйти на папку выше (../) зайти в папку fonts (fonts/) и выбрать нужный файл, не забываем расширение .ttf*/
+    font-family: RobotoCondensed-Regular;
+    /*обязательно указываем название шрифта, его можно придумать самостоятельно, важно, чтобы данное название совпадало с тем, которое вы пишите когда присваиваете этот шрифт чему-либо ( в моем случае на в строке 7 я присваиваю его всему сайту, потмоу что пишу font-family в теге body)*/
+}
+
+@font-face {
+    /*подключаем шрифт, сначала скачиваем его и переносим либо всю папку либо конкретный файл шрифта в папку (у меня шрифты лежат в папке fonts)*/
+    src: url(/src/fonts/RobotoCondensed-Light.ttf);
+    /*с помощью src вытаскиваем файл который нам нужен, пишем относительный путь к файлу шрифта, так как мы находимся в папке css в файле style, нужно выйти на папку выше (../) зайти в папку fonts (fonts/) и выбрать нужный файл, не забываем расширение .ttf*/
+    font-family: RobotoCondensed-Light;
+    /*обязательно указываем название шрифта, его можно придумать самостоятельно, важно, чтобы данное название совпадало с тем, которое вы пишите когда присваиваете этот шрифт чему-либо ( в моем случае на в строке 7 я присваиваю его всему сайту, потмоу что пишу font-family в теге body)*/
+}
+
+@font-face {
+    /*подключаем шрифт, сначала скачиваем его и переносим либо всю папку либо конкретный файл шрифта в папку (у меня шрифты лежат в папке fonts)*/
+    src: url(/src/fonts/OpenSans.ttf);
+    /*с помощью src вытаскиваем файл который нам нужен, пишем относительный путь к файлу шрифта, так как мы находимся в папке css в файле style, нужно выйти на папку выше (../) зайти в папку fonts (fonts/) и выбрать нужный файл, не забываем расширение .ttf*/
+    font-family: OpenSans;
+    /*обязательно указываем название шрифта, его можно придумать самостоятельно, важно, чтобы данное название совпадало с тем, которое вы пишите когда присваиваете этот шрифт чему-либо ( в моем случае на в строке 7 я присваиваю его всему сайту, потмоу что пишу font-family в теге body)*/
+}
+
+
+.glav0{
+position: relative;
+z-index: 5000;
+}
+
+.glavooo{
+    width: 100%;
+    background-color: #2c3340;
+    z-index: 5000;
+}
+
+.glavoo {
+    background-color: #2c3340;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px; 
+   
+}
+
+.glavo {
+width: 100%;
+display: flex;
+justify-content: center;
+background-color: #2c3340;
+/* */
+
+
+}
+
+.glav {
+  width: 100%;
+    /* top: 45px; */
+    padding: 0;
+    margin: 0;
+    /* background-image: linear-gradient(to top, rgba(0, 0, 0, .30), rgba(193, 193, 193, .30), rgba(0, 0, 0, .30)) !important; */
+    background-color: #2c3340;
+   max-width: 1250px;
+    height: 91px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.glavmob{
+    display: none;
+}
+
+.glavA {
+    border-left: 1px solid #2c3340;
+    border-right: 1px solid #2c3340;
+    font-weight: 300 !important;
+    font-family: RobotoCondensed-Regular;
+    font-size: .875rem;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    /* min-height: 80px; */
+    height: 100%;
+    min-height: 90px;
+    min-width: fit-content;
+    padding: 0 15px;
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+
+}
+
+.glavA:hover {
+    border-left: 1px solid #39f;
+    border-right: 1px solid #39f;
+    white-space: nowrap;
+    background-image: linear-gradient(to top, rgba(0, 160, 227, .90), rgba(0, 0, 0, .02), rgba(0, 0, 0, .02), rgba(0, 160, 227, .90)) !important;
+}
+
+/* .glavmob2{
+    display: none;
+} */
+
+.down {
+    width: 14px;
+    padding-left: 5px;
+}
+
+.search {
+    width: 22px;
+    /* padding-right: 160px; */
+    cursor: pointer;
+    /* text-align: right;
+    align-items: end; */
+    /* background-color: beige; */
+}
+
+.glavS {
+    display: flex;
+    justify-content: right;
+min-width: 120px;
+    width: 20%;
+   
+    /* position: absolute;
+    right: 5%;  */
+    /* margin-left : 30px; */
+}
+
+.glavL {
+    display: flex;
+    justify-content: left;
+    width: 20%;
+  
+}
+
+.logo {
+    display: flex;
+    
+
+    width: 120px;
+    margin-left: 0px;
+    /* padding-right: 30px;  */
+    /* padding-right: 10%; */
+    /* margin-right: 48px; */
+    cursor: pointer;
+
+}
+
+/* выпадающий список при наведении */
+/* Dropdown Button */
+.dropbtn {
+    background-color: #2c3340;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdowncontent {
+    display: none;
+    position: absolute;
+    background-color: #201f1f;
+    min-width: 220px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+    font-family: OpenSans;
+    font-size: 14px;
+    text-align: start;
+    font-weight: 100;
+    border-radius: 0px 0px 5px 5px;
+}
+
+/* Links inside the dropdown */
+.dropdowncontent a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-top: 0.5px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Change color of dropdown links on hover */
+.dropdowncontent a:hover {
+    background-color: #434343;
+    /* border-radius: 0px 0px 5px 5px; */
+}
+
+.a:hover {
+    /* border-radius: none; */
+    cursor: pointer;
+    border-radius: 0px 0px 5px 5px;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdowncontent {
+    display: block;
+    border-radius: 0px 0px 5px 5px;
+
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    border-left: 1px solid #39f;
+    border-right: 1px solid #39f;
+    white-space: nowrap;
+    background-image: linear-gradient(to top, rgba(0, 160, 227, .90), rgba(0, 0, 0, .02), rgba(0, 0, 0, .02), rgba(0, 160, 227, .90)) !important;
+}
+
+
+
+
+
+@media screen and (max-width: 1280px) {
+    .search {
+        /* width: 22px; */
+        /* padding-right: 35px; */
+        cursor: pointer;
+        /* text-align: right;
+        align-items: end; */
+        /* background-color: beige; */
+    }
+
+}
+
+
+@media screen and (max-width: 1266px) {
+    .search {
+        /* padding-left: 5px; */
+        /* display:none; */
+    }
+    
+    .glavS {
+        justify-content: right;
+        margin-right: 10px;
+        /* max-width: 8%; */
+    }
+    .glavL {
+        justify-content: left;
+      
+    }
+
+    .logo {
+        padding-left: 0px;
+        margin-left: 0;
+        padding-right: 0px;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .glavS {
+        display: flex;
+        justify-content: right;
+    min-width: 0px;
+        width: 20%;}
+}
+
+@media screen and (max-width: 1080px) {
+    .glav{
+        display: none;
+    }
+    .glavmob2{
+        display: flex;
+        width: 100%;
+        
+    }
+
+    .glavmob{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 90px;
+        background-color: #2c3340;
+    }
+    
+    .glavS{     
+        align-items: center;  
+        margin-right: 7%;
+    }
+
+    .search{
+        padding: 0px;
+       margin-top: 5px;
+        /* background-color: aqua; */
+        width: 22px;
+        height: 22px;
+        /* background-color: #434343; */
+    }
+
+    .logo {
+        width: 120px;
+        height: 120px;
+       
+    }
+
+    .glavL{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        margin-left: 4%;
+        /* background-color: aquamarine; */
+    }
+
+    .mobmen{
+        padding-top: 6px;
+        padding-right: 0px;
+        margin-left: 10px;
+        width: 24px;
+        height: 26px;
+        cursor: pointer;
+    }
+
+    .span{
+        color: white;
+        margin-right: 40px;
+        margin-left: 10px;
+        cursor: pointer;
+        font-weight: 100;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .logo {
+        width: 105px;
+        height: 105px;
+    }
+
+    .glavL{
+        
+    }
+}
+
+@media screen and (max-width: 695px) {
+
+    .glavS{
+        align-items: center;
+        margin-right: 5%;
+    }
+    .glavL{
+        align-items: center;
+       
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    .span{
+        display: none;
+    }
+
+    .mobmen{
+        padding-top: 4px;
+        padding-right: 45px;
+        margin-left: 0px;
+    }
+
+    .glavS{
+        align-items: center;
+        margin-right: 3%;
+    }
+    .glavL{
+        align-items: center;
+        margin-left: 3%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+ 
+    /* .glavS{
+        align-items: center;
+        margin-right: 60px;
+    } */
+
+.search{
+    display: none;
+    
+}
+.glavL{
+   
+}
+
+.glavS{
+    align-items: center;
+    margin-right:33px;
+}
+
+.logo {
+    width: 95px;
+    height: 85px;
+}
+.mobmen{
+    padding-top: 4px;
+    padding-right: 0px;
+/*   
+    background-color: aquamarine; */
+}
+
+}

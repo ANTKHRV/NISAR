@@ -1,0 +1,450 @@
+@font-face {
+    /*подключаем шрифт, сначала скачиваем его и переносим либо всю папку либо конкретный файл шрифта в папку (у меня шрифты лежат в папке fonts)*/
+    src: url(/src/fonts/OpenSans.ttf);
+    /*с помощью src вытаскиваем файл который нам нужен, пишем относительный путь к файлу шрифта, так как мы находимся в папке css в файле style, нужно выйти на папку выше (../) зайти в папку fonts (fonts/) и выбрать нужный файл, не забываем расширение .ttf*/
+    font-family: OpenSans;
+    /*обязательно указываем название шрифта, его можно придумать самостоятельно, важно, чтобы данное название совпадало с тем, которое вы пишите когда присваиваете этот шрифт чему-либо ( в моем случае на в строке 7 я присваиваю его всему сайту, потмоу что пишу font-family в теге body)*/
+}
+
+@font-face {
+    /*подключаем шрифт, сначала скачиваем его и переносим либо всю папку либо конкретный файл шрифта в папку (у меня шрифты лежат в папке fonts)*/
+    src: url(/src/fonts/RobotoCondensed-Regular.ttf);
+    /*с помощью src вытаскиваем файл который нам нужен, пишем относительный путь к файлу шрифта, так как мы находимся в папке css в файле style, нужно выйти на папку выше (../) зайти в папку fonts (fonts/) и выбрать нужный файл, не забываем расширение .ttf*/
+    font-family: RobotoCondensed-Regular;
+    /*обязательно указываем название шрифта, его можно придумать самостоятельно, важно, чтобы данное название совпадало с тем, которое вы пишите когда присваиваете этот шрифт чему-либо ( в моем случае на в строке 7 я присваиваю его всему сайту, потмоу что пишу font-family в теге body)*/
+}
+
+.footer {
+    width: 100%;
+    height: 1900px;
+    background-color: rgb(98, 176, 255);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .30), rgba(193, 193, 193, .30), rgba(0, 0, 0, .30)) !important;
+}
+
+.glavvvv2 {
+    display: none;
+}
+
+
+.glavvvv {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* background-color: aquamarine; */
+    justify-content: center;
+}
+
+.glavvv {
+    width: 100%;
+    /* background-color: black; */
+    max-width: 1250px;
+    min-width: 800px;
+    height: 100%;
+    /* box-sizing: content-box; */
+}
+
+
+.glav {
+    justify-items: stretch;
+    align-items: stretch;
+    row-gap: 22px;
+    column-gap: 0px;
+    grid-template-columns: auto auto auto auto auto;
+    display: grid;
+    grid-template-columns: 0.5fr 0.1fr 0.5fr 0.1fr 0.5fr;
+    place-items: center;
+    /* background-color: blue; */
+    /* margin: 50px; */
+
+
+}
+
+.glaV {
+    display: grid;
+    grid-template-columns: 0.5fr 0.1fr 0.5fr 0.1fr 0.5fr;
+    place-items: center;
+    column-gap: 1%;
+    row-gap: 2%;
+
+}
+
+.glav4i,
+.glav5i,
+.glav6i {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255, 0.7);
+    width: 100%;
+    height: 1px;
+    gap: 0;
+    min-width: 100px;
+    min-height: 1px;
+    border-radius: 15px;
+
+}
+
+.polos {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(35, 76, 118, 0.7);
+    width: 100%;
+    height: 100%;
+    height: 350px;
+    max-height: 350px;
+    min-width: 100px;
+    min-height: 100px;
+    border-radius: 15px;
+}
+
+
+.text0 {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+}
+
+.text {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding: 20px 50px;
+    max-width: 500px;
+    min-width: 200px;
+    height: 40px;
+    background: rgba(11, 61, 112, 0.7);
+    border-radius: 15px;
+
+}
+
+.text1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(44, 150, 238, 0.8);
+    min-width: 220px;
+    height: 100%;
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: 100;
+    border-radius: 3px;
+    cursor: pointer;
+    
+
+}
+
+.text1:hover {
+    background-color: rgba(44, 150, 238, 1);
+}
+
+.glav1,
+.glav2,
+.glav3,
+.glav4,
+.glav5,
+.glav6 {
+    flex-direction: column-reverse;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(31, 104, 177, 0.7);
+    width: 100%;
+    height: 100%;
+    height: 350px;
+    max-height: 350px;
+    min-width: 220px;
+    border-radius: 15px;
+    min-height: 100px;
+    cursor: pointer;
+    
+    z-index: 2500;
+}
+
+.glavt3 {
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    font-family: RobotoCondensed-Regular;
+    margin: 20px 20px;
+    margin-top: 0;
+
+}
+
+.glav1:hover,
+.glav2:hover,
+.glav3:hover,
+.glav4:hover,
+.glav5:hover,
+.glav6:hover {
+    background-color: rgba(5, 15, 25, 0.6);
+}
+
+.glav1AA {
+    width: 100%;
+    display: flex;
+
+
+}
+
+.glav1A {
+
+    display: flex;
+    text-align: center;
+    justify-content: start;
+    width: 100%;
+    align-items: center;
+    flex-direction: column-reverse;
+    /* background-color: rgb(58, 58, 100); */
+    /* border: 1px solid rgb(208, 46, 46); */
+    height: 80%;
+    font-size: 16px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    color: white;
+    font-family: OpenSans;
+    font-weight: 300;
+    padding: 0px 20px;
+}
+
+.glav1BB {
+    width: 100%;
+    max-width: 150px;
+    /* background-color: rgb(58, 58, 100); */
+    /* border: 1px solid rgb(208, 46, 46); */
+    height: 20%;
+
+    /* width: 100px; */
+    height: 20%;
+
+    border-radius: 60%;
+    border: 1px solid rgb(254, 254, 254);
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: rgba(44, 150, 238, 1);
+
+}
+
+.glav1B {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* background-color: blue; */
+    height: 50%;
+
+}
+
+.gruz {
+    width: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.hotp {
+    width: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.glav11,
+.glav12,
+.glav14,
+.glav15 {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1px;
+    height: 100%;
+    background-color: rgb(255, 255, 255, 0.7);
+    padding: 0px;
+    border-left: none;
+    /* border-right: 1px solid white; */
+}
+
+.glav44,
+.glav55,
+.glav66 {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100px;
+    height: 100%;
+    background-color: rgb(255, 255, 255, 0.7);
+    padding: 0px;
+    border-left: none;
+    /* border-right: 1px solid white; */
+}
+
+@media screen and (max-width: 1600px) {}
+
+@media screen and (max-width: 1280px) {
+    .glavvv {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .glavvv {
+        padding: 0 7%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+
+    .glav1,
+    .glav2,
+    .glav3,
+    .glav4,
+    .glav5,
+    .glav6 {
+        flex-direction: column-reverse;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(31, 104, 177, 0.7);
+        width: 100%;
+        height: 100%;
+        height: 350px;
+        max-height: 350px;
+        min-width: 220px;
+        max-width: 400px;
+        border-radius: 15px;
+        min-height: 100px;
+        cursor: pointer;
+    }
+
+    .glavvv {
+        width: 100%;
+        /* background-color: black; */
+        max-width: 1250px;
+        min-width: 300px;
+        height: 100%;
+        /* box-sizing: content-box; */
+    }
+
+    .glavvvv2 {
+        display: flex;
+    }
+
+
+    .glav {
+        justify-items: stretch;
+        align-items: stretch;
+        row-gap: 22px;
+        column-gap: 0px;
+        /* grid-template-columns: auto auto auto ; */
+        display: grid;
+        grid-template-columns: 0.5fr 0.1fr 0.5fr;
+        place-items: center;
+        /* background-color: blue; */
+        /* margin: 50px; */
+    }
+
+    .glavvvv {
+        display: none;
+
+    }
+
+    .text0 {
+        display: none;
+    }
+
+    .text00 {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 695px) {
+
+    .glavt3 {
+
+        margin-top: 0;
+    }
+
+    .glav1A {
+
+        width: 100%;
+        height: 100%;
+        align-items: start;
+        justify-content: center;
+
+    }
+
+    .glav1B {
+
+        display: none;
+
+    }
+
+    .glav {
+        justify-items: stretch;
+        align-items: stretch;
+        row-gap: 0px;
+        column-gap: 10px;
+        /* grid-template-columns: auto auto auto ; */
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        /* background-color: blue; */
+        /* margin: 50px; */
+    }
+
+    .glav4i,
+    .glav5i,
+    .glav11 {
+        display: none;
+    }
+
+    .glav1,
+    .glav2,
+    .glav3,
+    .glav4,
+    .glav5,
+    .glav6 {
+        flex-direction: column-reverse;
+        display: flex;
+        justify-content: center;
+        /* align-items: start; */
+        background-color: rgba(31, 104, 177, 0.7);
+        width: 100%;
+        height: 100%;
+        height: 150px;
+        max-height: 350px;
+        min-width: 220px;
+        max-width: 600px;
+        border-radius: 15px;
+        min-height: 100px;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+
+    .text {
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .glavt3,
+    .glavt2 {
+        width: 100%;
+        text-align: start;
+        display: inline-block;
+    }
+
+    .glav1A {
+        align-items: center;
+
+    }
+
+    .glavvv {
+        padding: 0 3%;
+    }
+}

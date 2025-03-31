@@ -1,0 +1,768 @@
+@font-face {
+    /*подключаем шрифт, сначала скачиваем его и переносим либо всю папку либо конкретный файл шрифта в папку (у меня шрифты лежат в папке fonts)*/
+    src: url(/src/fonts/OpenSans.ttf);
+    /*с помощью src вытаскиваем файл который нам нужен, пишем относительный путь к файлу шрифта, так как мы находимся в папке css в файле style, нужно выйти на папку выше (../) зайти в папку fonts (fonts/) и выбрать нужный файл, не забываем расширение .ttf*/
+    font-family: OpenSans;
+    /*обязательно указываем название шрифта, его можно придумать самостоятельно, важно, чтобы данное название совпадало с тем, которое вы пишите когда присваиваете этот шрифт чему-либо ( в моем случае на в строке 7 я присваиваю его всему сайту, потмоу что пишу font-family в теге body)*/
+}
+
+@font-face {
+    /*подключаем шрифт, сначала скачиваем его и переносим либо всю папку либо конкретный файл шрифта в папку (у меня шрифты лежат в папке fonts)*/
+    src: url(/src/fonts/RobotoCondensed-Regular.ttf);
+    /*с помощью src вытаскиваем файл который нам нужен, пишем относительный путь к файлу шрифта, так как мы находимся в папке css в файле style, нужно выйти на папку выше (../) зайти в папку fonts (fonts/) и выбрать нужный файл, не забываем расширение .ttf*/
+    font-family: RobotoCondensed-Regular;
+    /*обязательно указываем название шрифта, его можно придумать самостоятельно, важно, чтобы данное название совпадало с тем, которое вы пишите когда присваиваете этот шрифт чему-либо ( в моем случае на в строке 7 я присваиваю его всему сайту, потмоу что пишу font-family в теге body)*/
+}
+
+
+.forma{
+  position: relative;
+  z-index: 2600;
+}
+.ulg{
+padding-left: 0;
+}
+
+
+.glav2qq {
+  display: none;}
+
+.glavref{
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  
+}
+
+.glavsearchresult{
+  width: 100%;
+ 
+  display: flex;
+  margin:0;
+padding-left: 0;
+  flex-direction: column;
+}
+
+.href{
+
+  padding:10px 30px;
+  background: #00a0e3 ;
+  text-decoration: none;
+  color: white;
+  font-size: .875rem;
+  border-radius: 5px;
+
+}
+
+.href:hover{
+  background: #1cbbff ;
+
+}
+.pic{
+  width: 100px;
+}
+
+.zagsearch{
+ 
+  font-family: RobotoCondensed-Regular;
+  font-size: 1.6rem;
+  line-height: 0.7;
+  font-weight: 400;
+  /* color: #8b8b8b; */
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.taxtsearch{
+  font-size: 16px;
+font-family: OpenSans;
+font-weight: 300;
+line-height: 1.5;
+margin-bottom: 15px;
+/* background-color: aquamarine; */
+}
+
+.glavvvv2 {
+    display: none;
+}
+
+
+.glavvvv {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: 100;
+    
+}
+
+.glavvv {
+    width: 100%;
+    /* background-color: black; */
+ 
+    max-width: 1250px;
+    min-width: 350px;
+    height: 100%;
+    background-color: white;
+    /* box-sizing: content-box; */
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+
+
+.glav {
+  
+    justify-items: stretch;
+    align-items: stretch;
+    row-gap: 22px;
+    column-gap: 0px;
+    grid-template-columns: auto auto auto ;
+    display: grid;
+    grid-template-columns: 1fr 0.045fr 0.5001fr;
+    place-items: center;
+    /* background-color: blue; */
+    /* margin: 50px; */
+    background-color: white;
+}
+
+.glavq {
+  
+  justify-items: stretch;
+  align-items: stretch;
+  row-gap: 0px;
+  column-gap: 0px;
+  grid-template-columns: auto auto ;
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  place-items: center;
+  background-color: white;
+
+  
+  /* margin: 50px; */
+}
+
+.onas{
+    display: flex;
+    justify-content: center;
+    padding-top: 0px;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    font-family: RobotoCondensed-Regular;
+    font-weight: 500;
+    width: 100%;
+  }
+
+  .onas2{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px ;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    font-family: RobotoCondensed-Regular;
+    font-weight: 500;
+    width: 100%;
+  }
+
+  .onas3{
+  width: 100%;
+  background-image: linear-gradient(to top, rgba(2, 123, 173, 1.0),rgba(0, 160, 227, .99), rgba(2, 123, 173, 1.0));
+  margin-bottom: 35px;
+  padding-top: 10px;
+  border-radius: 5px;
+  height: auto;
+
+  }
+
+  .onas3form{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: bisque; */
+    
+  
+  }
+
+  .inp{
+    outline:none;
+    font-size: 16px;
+    border-radius: 3px;
+    height: 40px;
+    padding: 0 10px;
+    background: #fff;
+    
+    color: #666;
+    border: 1px solid #e5e5e5;
+    transition: .2s ease-in-out;
+    transition-property: all;
+    transition-property: color,background-color,border;
+    width: 350px;
+    box-sizing: border-box;
+  }
+
+  .onas3knop{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 40px;
+    cursor: pointer;
+    background-color: rgba(44, 150, 238, 1);
+    
+    color: #fff;
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: 100;
+  }
+
+  .onas3knop:hover{
+    background-color: rgb(86, 165, 230, 0.8);
+  }
+
+  .onas3text{
+    box-sizing: border-box;
+   padding-left: 10px;
+   padding-right: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  color: white;
+  font-family: RobotoCondensed-Regular;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  
+  }
+
+  .onastext{
+    text-align:justify;
+    margin-top: 20px;
+    padding: 0;
+display: flex;
+justify-content: space-between;
+font-size: 16px;
+font-family: OpenSans;
+font-weight: 300;
+line-height: 1.5;
+}
+
+
+
+  .glav1 {
+    flex-direction: column;
+    /* flex-direction: column-reverse; */
+    display: flex;
+    /* justify-content: center; */
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    /* height: 350px;
+    max-height: 350px;
+    min-width: 220px;
+    border-radius: 15px;
+    min-height: 100px;
+    cursor: pointer; */
+  }
+
+  .glav1q {
+    flex-direction: column;
+    /* flex-direction: column-reverse; */
+    display: flex;
+    /* justify-content: center; */
+    background-color: rgba(255, 255, 255, 1);
+    
+    width: 100%;
+    height: 100%;
+    /* height: 350px;
+    max-height: 350px;
+    min-width: 220px;
+    border-radius: 15px;
+    min-height: 100px;
+    cursor: pointer; */
+    text-align: start;
+   
+  }
+
+  .glav2q {
+    flex-direction: column;
+    /* flex-direction: column-reverse; */
+    display: flex;
+    /* justify-content: center; */
+   
+    width: 100%;
+    height: 100%;
+    /* height: 350px;
+    max-height: 350px;
+    min-width: 220px;
+    border-radius: 15px;
+    min-height: 100px;
+    cursor: pointer; */
+    text-align: start;
+    padding-left: 0px;
+  }
+  
+  .div1{
+    font-weight: 400;
+    color: #000000;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    font-family: RobotoCondensed-Regular;
+  
+    margin-bottom: 0px;
+  
+    
+    
+  }
+
+
+  .Pp{
+font-weight: 500;
+  }
+
+  .Pp2{
+    background-color: #00a0e3;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 10px 0px;
+    width: 155px;
+    text-align: center;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .60), rgba(0, 0, 0, .10), rgba(255, 102, 0, .0));
+
+      }
+
+  .div00{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding-top: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #444444;
+    font-family: OpenSans;
+
+  }
+.div01{
+  padding-bottom: 0px;
+  font-weight: 300;
+}
+  .div00j{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+
+    background-color: rgb(255, 255, 255);
+  }
+
+  .div001o0{
+    font-weight: 500;
+  font-size: 16px;
+  color: #1e1d1d;
+  font-family:OpenSans;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  
+
+  }
+
+  .formm{
+    
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(0, 164, 234);
+    
+    border-radius: 5px;
+    border: none;
+    color: white;
+    
+  }
+
+  .formmb{
+    
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    background-color: rgb(0, 164, 234);
+    font-size: 1rem;
+    font-weight: 100;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    
+  }
+
+  .formmp22{
+    
+    box-sizing: border-box;
+    width: 96%;
+    height: 40px;
+    margin:0;
+    border: none;
+	border: 1px solid #dbdbdb;
+	border-radius: 5px;
+	font-size: 14px;
+	/* font-family: Helvetica; */
+	color: #ae4646; 
+	outline:none;
+	padding: 0 10px;
+  margin-top: 4px;
+  width: 95%; 
+  color: #000000;
+  font-size: 16px;
+  font-weight: 100;
+  font-family: OpenSans;
+
+  }
+
+  .formmp2{
+    margin-left: 10px;
+    box-sizing: border-box;
+    width: 96%;
+    height: 40px;
+    margin:0;
+    border: none;
+	border: 1px solid #dbdbdb;
+	border-radius: 5px;
+	font-size: 14px;
+	/* font-family: Helvetica; */
+	color: #222; 
+	outline:none;
+	padding: 0 10px;
+  margin-top: 4px;
+  width: 100%; 
+  color: #000000;
+  font-size: 16px;
+  font-weight: 100;
+  font-family: OpenSans;
+  }
+
+  .formmp3{
+    
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    margin:0;
+    border: none;
+	border: 1px solid #dbdbdb;
+	border-radius: 5px;
+	font-size: 14px;
+	/* font-family: Helvetica; */
+	color: #222; 
+	outline:none;
+	padding: 0 10px;
+  margin-top: 4px;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 100;
+  font-family: OpenSans;
+ 
+ 
+
+    
+  }
+  .formmp{
+    
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    margin:0;
+    border: none;
+	border: 1px solid #dbdbdb;
+	border-radius: 5px;
+	font-size: 14px;
+	/* font-family: Helvetica; */
+	color: #222; 
+	outline:none;
+	padding: 0 10px;
+  margin-top: 8px;
+  
+    
+  }
+  .formmp11{
+    
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    margin:0;
+    border: none;
+	border: 1px solid #dbdbdb;
+	border-radius: 5px;
+	font-size: 14px;
+	/* font-family: Helvetica; */
+	color: #222; 
+	outline:none;
+	padding: 0 10px;
+  margin-top: 0px;
+  margin-top: 4px;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 100;
+  font-family: OpenSans;
+    
+  }
+
+  .formm10{
+    
+    box-sizing: border-box;
+    width: 100%;
+    height: 190px;
+    box-sizing: border-box;
+  
+    margin:0;
+    border: none;
+	border: 1px solid #dbdbdb;
+	border-radius: 5px;
+	font-size: 14px;
+	/* font-family: Helvetica; */
+	color: #222; 
+	outline:none;
+	padding: 0 10px;
+  padding-top: 8px;
+  margin-top: 4px;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 100;
+  font-family: OpenSans;
+    
+  }
+
+  .formm3{
+    box-sizing: border-box;
+    width: 100%;
+    margin-right: 6%;
+    height: 40px;
+  }
+
+  .formm4{
+    box-sizing: border-box;
+    width: 94%;
+    margin-right: 6%;
+    height: 40px;
+
+  }
+
+  .div01{
+  font-size: 16px;
+  font-family: OpenSans;
+  line-height: 1.5;
+  padding: 10px 0px;
+   }
+
+.div001{
+ padding-right: 0px;
+}
+.div0012{
+  padding-right: 20px;
+ }
+  .div00a{
+    display: flex;
+ width: 100%;
+ box-sizing: border-box;
+    /* background-color: blue; */
+    /* margin: 50px; */
+    background-color: rgb(87, 72, 147);
+    background-color: white;
+
+  }
+
+  .glav2 {
+    /* flex-direction: column-reverse; */
+    display: flex;
+    /* justify-content: center; */
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid rgb(101, 63, 63);
+    /* height: 350px;
+    max-height: 350px;
+    min-width: 220px;
+    border-radius: 15px;
+    min-height: 100px;
+    cursor: pointer; */
+  }
+
+  .glav3 {
+    /* flex-direction: column-reverse; */
+    display: flex;
+    width: 100%;
+    /* justify-content: center; */
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    border-left: 1px solid rgb(215, 215, 215);
+    /* height: 350px;
+    max-height: 350px;
+    min-width: 220px;
+    border-radius: 15px;
+    min-height: 100px;
+    cursor: pointer; */
+
+  }
+
+  .glav3a{
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(2, 123, 173, 1.0),rgba(0, 160, 227, .99), rgba(2, 123, 173, 1.0));
+    margin-left: 9.5%;
+  }
+
+
+@media screen and (max-width: 1600px) {}
+
+@media screen and (max-width: 1280px) {
+    .glavvv {
+        padding:0px 20px;
+        padding-top: 70px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .glavvv {
+        padding: 0 7%;
+        padding-top: 70px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+
+  .glavvv {
+
+    padding-top: 15px;
+}
+
+  .glav2{
+    display: none;
+  }
+
+  .glav {
+    justify-items: stretch;
+    align-items: stretch;
+    row-gap: 22px;
+    column-gap: 0px;
+    grid-template-columns: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    /* background-color: blue; */
+    /* margin: 50px; */
+    background-color: rgb(255, 255, 255);
+}
+
+.onas{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    font-family: RobotoCondensed-Regular;
+    font-weight: 500;
+    width: 100%;
+  }
+
+}
+@media screen and (max-width: 950px) {
+.glav2q{display: none;
+  background-color: white;}
+  .div001{
+    padding-right: 0px;
+   }
+   .div0012{
+     padding-right: 30px;
+    }
+
+.glav2qq {
+  flex-direction: column;
+  /* flex-direction: column-reverse; */
+  display: flex;
+  /* justify-content: center; */
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  /* height: 350px;
+  max-height: 350px;
+  min-width: 220px;
+  border-radius: 15px;
+  min-height: 100px;
+  cursor: pointer; */
+  text-align: start;
+  padding-left: 0px;
+}
+
+.formmp22{
+  width: 100%;
+}
+
+}
+
+@media screen and (max-width: 695px) {
+ 
+  .div001{
+    padding-right: 0px;
+   }
+
+  .glavq {
+  
+    justify-items: stretch;
+    align-items: stretch;
+    row-gap: 22px;
+    column-gap: 0px;
+    grid-template-columns: auto  ;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+     background-color: white;
+    /* margin: 50px; */
+
+  }
+
+  
+  .onas3knop{
+width: 210px;
+  }
+
+  .inp{
+    width: auto;
+  }
+    
+    .glav1{
+        width: 100%;
+        min-width: 220px;
+        max-width: 600px;
+}
+
+.onas3text{
+    padding: 0;
+}
+
+    .glavvv {
+        padding: 0 3%;
+    }
+
+    .onas2{
+        margin-bottom: 25px;
+        margin-top: 30px;
+    }
+
+    .onas, .onas2{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+.forma{
+  position: relative;
+  z-index: 3500;
+}
+}

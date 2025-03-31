@@ -1,0 +1,310 @@
+@font-face {
+    /*подключаем шрифт, сначала скачиваем его и переносим либо всю папку либо конкретный файл шрифта в папку (у меня шрифты лежат в папке fonts)*/
+    src: url(/src/fonts/OpenSans.ttf);
+    /*с помощью src вытаскиваем файл который нам нужен, пишем относительный путь к файлу шрифта, так как мы находимся в папке css в файле style, нужно выйти на папку выше (../) зайти в папку fonts (fonts/) и выбрать нужный файл, не забываем расширение .ttf*/
+    font-family: OpenSans;
+    /*обязательно указываем название шрифта, его можно придумать самостоятельно, важно, чтобы данное название совпадало с тем, которое вы пишите когда присваиваете этот шрифт чему-либо ( в моем случае на в строке 7 я присваиваю его всему сайту, потмоу что пишу font-family в теге body)*/
+}
+
+@font-face {
+    /*подключаем шрифт, сначала скачиваем его и переносим либо всю папку либо конкретный файл шрифта в папку (у меня шрифты лежат в папке fonts)*/
+    src: url(/src/fonts/RobotoCondensed-Regular.ttf);
+    /*с помощью src вытаскиваем файл который нам нужен, пишем относительный путь к файлу шрифта, так как мы находимся в папке css в файле style, нужно выйти на папку выше (../) зайти в папку fonts (fonts/) и выбрать нужный файл, не забываем расширение .ttf*/
+    font-family: RobotoCondensed-Regular;
+    /*обязательно указываем название шрифта, его можно придумать самостоятельно, важно, чтобы данное название совпадало с тем, которое вы пишите когда присваиваете этот шрифт чему-либо ( в моем случае на в строке 7 я присваиваю его всему сайту, потмоу что пишу font-family в теге body)*/
+}
+
+
+.glavvvv2 {
+    display: none;
+}
+
+
+.glavvvv {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+}
+
+.glavvv {
+    width: 100%;
+    /* background-color: black; */
+    max-width: 1250px;
+    min-width: 350px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    /* box-sizing: content-box; */
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+
+
+.glav {
+    justify-items: stretch;
+    align-items: stretch;
+    row-gap: 22px;
+    column-gap: 0px;
+    grid-template-columns: auto auto auto ;
+    display: grid;
+    grid-template-columns: 1fr 0.045fr 0.5001fr;
+    place-items: center;
+    /* background-color: blue; */
+    /* margin: 50px; */
+    background-color: rgb(147, 72, 72);
+}
+
+.onas{
+    display: flex;
+    justify-content: center;
+    padding-top: 0px;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    font-family: RobotoCondensed-Regular;
+    font-weight: 500;
+    width: 100%;
+  }
+
+  .onas2{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px ;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    font-family: RobotoCondensed-Regular;
+    font-weight: 500;
+    width: 100%;
+  }
+
+  .onas3{
+  width: 100%;
+  background-image: linear-gradient(to top, rgba(2, 123, 173, 1.0),rgba(0, 160, 227, .99), rgba(2, 123, 173, 1.0));
+  margin-bottom: 35px;
+  padding-top: 10px;
+  border-radius: 5px;
+  height: auto;
+      position: relative;
+    z-index: 2500;
+  }
+
+  .onas3form{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: bisque; */
+
+  }
+
+  .inp{
+    outline:none;
+    font-size: 16px;
+    border-radius: 3px;
+    height: 40px;
+    padding: 0 10px;
+    background: #fff;
+    color: #666;
+    border: 1px solid #e5e5e5;
+    transition: .2s ease-in-out;
+    transition-property: all;
+    transition-property: color,background-color,border;
+    width: 350px;
+    box-sizing: border-box;
+  }
+
+  .onas3knop{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 40px;
+    cursor: pointer;
+    background-color: rgba(44, 150, 238, 1);
+    
+    color: #fff;
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: 100;
+  }
+
+  .onas3knop:hover{
+    background-color: rgb(86, 165, 230, 0.8);
+  }
+
+  .onas3text{
+    box-sizing: border-box;
+   padding-left: 10px;
+   padding-right: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  color: white;
+  font-family: RobotoCondensed-Regular;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  }
+
+  .onastext{
+    text-align:justify;
+    margin-top: 20px;
+    padding: 0;
+display: flex;
+justify-content: space-between;
+font-size: 16px;
+font-family: OpenSans;
+font-weight: 300;
+line-height: 1.5;
+}
+
+  .glav1 {
+    flex-direction: column;
+    /* flex-direction: column-reverse; */
+    display: flex;
+    /* justify-content: center; */
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    /* height: 350px;
+    max-height: 350px;
+    min-width: 220px;
+    border-radius: 15px;
+    min-height: 100px;
+    cursor: pointer; */
+  }
+
+  .glav2 {
+    /* flex-direction: column-reverse; */
+    display: flex;
+    /* justify-content: center; */
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid rgb(101, 63, 63);
+    /* height: 350px;
+    max-height: 350px;
+    min-width: 220px;
+    border-radius: 15px;
+    min-height: 100px;
+    cursor: pointer; */
+  }
+
+  .glav3 {
+    /* flex-direction: column-reverse; */
+    display: flex;
+    width: 100%;
+    /* justify-content: center; */
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    border-left: 1px solid rgb(215, 215, 215);
+    /* height: 350px;
+    max-height: 350px;
+    min-width: 220px;
+    border-radius: 15px;
+    min-height: 100px;
+    cursor: pointer; */
+
+  }
+
+  .glav3a{
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(2, 123, 173, 1.0),rgba(0, 160, 227, .99), rgba(2, 123, 173, 1.0));
+    margin-left: 9.5%;
+  }
+
+
+@media screen and (max-width: 1600px) {}
+
+@media screen and (max-width: 1280px) {
+    .glavvv {
+        padding:0px 20px;
+        padding-top: 70px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .glavvv {
+        padding: 0 7%;
+        padding-top: 70px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+
+  .glavvv {
+
+    padding-top: 15px;
+}
+
+  .glav2{
+    display: none;
+  }
+
+  .glav {
+    justify-items: stretch;
+    align-items: stretch;
+    row-gap: 22px;
+    column-gap: 0px;
+    grid-template-columns: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    /* background-color: blue; */
+    /* margin: 50px; */
+    background-color: rgb(255, 255, 255);
+}
+
+.onas{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    font-family: RobotoCondensed-Regular;
+    font-weight: 500;
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 695px) {
+ 
+  .onas3knop{
+width: 210px;
+  }
+
+  .inp{
+    width: auto;
+  }
+    
+    .glav1{
+        width: 100%;
+        min-width: 220px;
+        max-width: 600px;
+}
+
+.onas3text{
+    padding: 0;
+}
+
+    .glavvv {
+        padding: 0 3%;
+    }
+
+    .onas2{
+        margin-bottom: 25px;
+        margin-top: 30px;
+    }
+
+    .onas, .onas2{
+        font-size: 1.2rem;
+    }
+}

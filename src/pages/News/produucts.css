@@ -1,0 +1,109 @@
+    @font-face {
+        /*подключаем шрифт, сначала скачиваем его и переносим либо всю папку либо конкретный файл шрифта в папку (у меня шрифты лежат в папке fonts)*/
+        src: url(/src/fonts/OpenSans.ttf);
+        /*с помощью src вытаскиваем файл который нам нужен, пишем относительный путь к файлу шрифта, так как мы находимся в папке css в файле style, нужно выйти на папку выше (../) зайти в папку fonts (fonts/) и выбрать нужный файл, не забываем расширение .ttf*/
+        font-family: OpenSans;
+        /*обязательно указываем название шрифта, его можно придумать самостоятельно, важно, чтобы данное название совпадало с тем, которое вы пишите когда присваиваете этот шрифт чему-либо ( в моем случае на в строке 7 я присваиваю его всему сайту, потмоу что пишу font-family в теге body)*/
+    }
+    @font-face {
+        /*подключаем шрифт, сначала скачиваем его и переносим либо всю папку либо конкретный файл шрифта в папку (у меня шрифты лежат в папке fonts)*/
+        src: url(/src/fonts/RobotoCondensed-Regular.ttf);
+        /*с помощью src вытаскиваем файл который нам нужен, пишем относительный путь к файлу шрифта, так как мы находимся в папке css в файле style, нужно выйти на папку выше (../) зайти в папку fonts (fonts/) и выбрать нужный файл, не забываем расширение .ttf*/
+        font-family: RobotoCondensed-Regular;
+        /*обязательно указываем название шрифта, его можно придумать самостоятельно, важно, чтобы данное название совпадало с тем, которое вы пишите когда присваиваете этот шрифт чему-либо ( в моем случае на в строке 7 я присваиваю его всему сайту, потмоу что пишу font-family в теге body)*/
+    }
+    .home{
+        display: flex;
+        justify-content: center;
+        margin-top: 0px;
+        height: 370px;
+        background-image: linear-gradient(to right, rgba(16, 134, 255, .80), rgba(0, 0, 0, .30), rgba(16, 134, 255, .80)), url(../Vakansiya/baner2.png) !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    position: relative !important;
+    background-attachment: fixed !important;
+    background-size:cover !important;
+
+    
+    }
+
+    .home2{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+        width: 100%;
+        /* background-color: black; */
+        max-width: 1250px;
+        min-width: 350px;
+        height: 100%;
+        /* background-color: rgb(255, 255, 255, 0.1); */
+        color: #ffffff;
+    text-shadow: 1px 1px 3px #000;
+    font-size: 3.25rem;
+    font-family: RobotoCondensed-Regular;
+    }
+
+    .home3{
+        margin-top: 18px;
+        display: flex;
+        color: #d2d2d2;
+        font-size: 0.895rem;
+        /* background-color: blue; */
+        font-family: OpenSans;
+        font-weight: 300;
+        /* background-color: aqua; */
+        justify-content: end;
+        align-items: end;
+    }
+
+    .dom{
+        margin-top: 0px;
+        width: 19px;
+        padding-right: 15px;
+    }
+
+    .home5{
+        padding-left: 15px;
+    }
+
+
+    @media screen and (max-width: 1280px) {
+        .home {
+            padding: 0 20px;
+        }
+    }
+    @media screen and (max-width: 1080px) {
+        .home {
+            padding: 0 7%;
+        }
+
+        .home2{
+
+            font-size: 2.6rem;
+        }
+
+    }
+
+    @media screen and (max-width: 595px) {
+        .home {
+            padding: 0 3%;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .home {
+           
+            background-image: linear-gradient(to right, rgba(16, 134, 255, .80), rgba(0, 0, 0, .30), rgba(16, 134, 255, .80)), url(../Vakansiya/baners.png) !important;
+            background-repeat:repeat-x;
+            background-position: center center !important;
+            position: relative !important;
+            background-attachment: fixed !important;
+            background-size:cover ;
+            width: auto;
+        
+                margin-top: 0px;
+        
+            margin-top: 0px;
+        }
+    }

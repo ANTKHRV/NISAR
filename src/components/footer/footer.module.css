@@ -1,0 +1,458 @@
+@font-face {
+  /*подключаем шрифт, сначала скачиваем его и переносим либо всю папку либо конкретный файл шрифта в папку (у меня шрифты лежат в папке fonts)*/
+  src: url(/src/fonts/OpenSans.ttf);
+  /*с помощью src вытаскиваем файл который нам нужен, пишем относительный путь к файлу шрифта, так как мы находимся в папке css в файле style, нужно выйти на папку выше (../) зайти в папку fonts (fonts/) и выбрать нужный файл, не забываем расширение .ttf*/
+  font-family: OpenSans;
+  /*обязательно указываем название шрифта, его можно придумать самостоятельно, важно, чтобы данное название совпадало с тем, которое вы пишите когда присваиваете этот шрифт чему-либо ( в моем случае на в строке 7 я присваиваю его всему сайту, потмоу что пишу font-family в теге body)*/
+}
+
+
+
+.glavFO2{
+  display: none;
+}
+
+.glavFO{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: #000000;
+    background-image: none;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, .30), rgba(193, 193, 193, .30), rgba(0, 0, 0, .30)) !important;
+
+}
+
+.glavF{
+    width: 100%;
+    max-width: 1250px;
+    background: white;
+    padding-top: 40px;
+  padding-bottom: 40px;
+  background: #000000;
+    background-image: none;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, .30), rgba(193, 193, 193, .30), rgba(0, 0, 0, .30)) !important;
+  border-bottom: 1px solid rgba(193, 193, 193, .30);
+  color: #ffffff !important;
+  font-family: OpenSans;
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: 16px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.glavF2{
+  height: 60px;
+  width: 100%;
+  background: rgb(0, 164, 234);
+  color: #ffffff;
+  text-shadow: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: OpenSans;
+}
+
+.glav1A{
+ 
+display: flex;
+flex-direction: row;
+/*   */
+}
+
+.ph{
+  width: 30px;
+  margin-left: 6px;
+}
+
+
+
+.glav1, .glav2, .glav3, .glav4{
+  padding: 0px 40px;
+  font-family: OpenSans;
+  font-weight: 300;
+font-size: 14px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 100%;
+max-width: 300px;
+height: 100%;
+
+}
+
+.glav3{
+  align-items: flex-start;
+  /* background-color: #a35353; */
+
+}
+.glav1{
+  padding-left: 0;
+  }
+
+.glav1, .glav2, .glav3{
+width: 100%;
+height: 100%;
+border-right: 2px solid #39f;
+}
+
+.glav1{
+  padding-left: 0;
+  }
+
+.glav11{
+padding-left: 10px;
+flex-direction: column;
+padding-top: 0px;
+  width: 100%;
+  width: 180px;
+  display: flex;
+align-items: start;
+}
+
+.glav11:hover, .glav12:hover{
+cursor: pointer;
+
+}
+
+
+.glav12{
+  padding-left: 10px;
+  flex-direction: column;
+  padding-top: 0px;
+    width: 100%;
+    width: 180px;
+    display: flex;
+  align-items: start;
+}
+
+.phone, .adress, .clock, .mail{
+  width: 40px;
+}
+
+.check{
+  width: 40px;
+  padding-bottom: 5px;
+}
+
+.glavF1{
+width: 22%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color: #201d1d; */
+  
+}
+
+.glavFF1{
+  width: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color: #a35353; */
+  height: 160px;
+}
+
+.span{
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.span2:hover{
+  text-decoration:underline}
+
+  .span3{
+font-weight: 700  ;
+
+  }
+
+  .span3:hover, .span31:hover, .span32:hover{
+
+    text-decoration:underline}
+
+
+.kn{
+  display: flex;
+  z-index: 2500;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 190px;
+  height: 50px;
+  cursor: pointer;
+  background: #00a0e3;
+    background-image: none;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, .60), rgba(0, 0, 0, .10), rgba(255, 102, 0, .0));
+  color: #ffffff;
+  font-weight: 700;
+  padding-left: 10px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.kn:hover{
+  background-image: linear-gradient(to left, rgba(0, 0, 0, .60), rgba(0, 0, 0, .10), rgba(255, 102, 0, .0));
+
+}
+
+.wu{
+  width: 55px;
+  margin-top: 0px;
+  padding-bottom: 10px;
+}
+
+.tg{
+  width: 50px;
+  margin-top: 0px;
+  padding-bottom: 15px;
+  position: relative;
+  z-index: 2500;
+}
+
+.wutg{
+  width: 100%;
+ display: flex;
+ background-color: aqua;
+ /* flex-direction: column; */
+ align-items: center;
+ /* justify-content: center; */
+ /* align-items: center; */
+}
+
+@media screen and (max-width: 1280px) {
+
+
+
+
+  .glav1, .glav2, .glav3, .glav4{
+    padding: 0px 20px;
+    font-family: OpenSans;
+    font-weight: 300;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  
+  }
+
+}
+
+@media screen and (max-width: 1080px) {
+
+  .kn{
+    margin-right: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 190px;
+    height: 50px;
+    cursor: pointer;
+    background: #00a0e3;
+      background-image: none;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .60), rgba(0, 0, 0, .10), rgba(255, 102, 0, .0));
+    color: #ffffff;
+    font-weight: 700;
+    padding-left: 10px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: 5px;
+    border: 1px solid #000;
+  }
+
+  
+  .glav1, .glav2, .glav3, .glav4{
+    padding: 0px 15px;
+    font-family: OpenSans;
+    font-weight: 300;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  
+  }
+  .glavF{
+  max-width: 940px;
+  margin: 0px 5%;
+      }
+
+      
+.glav11, .glav12{
+ padding-right: 10px;
+    width: 120px;
+   
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .glavFO2{
+    padding-bottom:0px;
+    color: white;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: #000000;
+    background-image: none;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .30), rgba(193, 193, 193, .30), rgba(0, 0, 0, .30)) !important;
+  }
+
+  .glavFO{
+    display: none;
+  }
+
+  .glav2{
+    border: none;
+  }
+
+  .glavF{
+    max-width: 100%;
+    margin: 0px 5%;
+    margin-top: 0;
+        }
+   
+   .glav1{
+margin-top: 50px;
+margin-bottom: 0px;
+        }
+
+        .glav2{
+          margin-bottom: 0px;
+          margin-top: 50px;
+        }
+
+        .glav1, .glav2, .glav3, .glav4{
+          padding: 0px 15px;
+          font-family: OpenSans;
+          font-weight: 300;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        max-width: 500px;
+        height: 100%;
+        }
+     
+        .glav11, .glav12{
+          padding-right: 10px;
+             width: 120px;
+             /* background-color: #a35353; */
+           }
+
+           .glav1A{
+            /* background-color: red; */
+            justify-content: start;
+            padding-bottom: 30px;
+            margin: 0px 12%;
+           }
+
+           .glavF2{
+            margin-top: 0px;
+            background-color: rgb(0, 164, 234);
+           }
+           .glav1, .glav2{
+            height: 180px;
+           }
+
+           .glav3, .glav4{
+            margin-top: 50px;
+            padding-top: 20px;
+            height: 180px;
+            margin-bottom: 50px;
+           }
+
+           .span31{
+            font-weight: 700  ;
+            padding-top: 9px;
+             }
+
+             .span32{
+              font-weight: 700  ;
+                }
+}
+
+@media screen and (max-width: 695px) {
+  .glav1A{
+    /* background-color: red;  */
+    justify-content: start;
+    padding-bottom: 30px;
+    margin: 0px 3%;
+   }
+
+}
+
+@media screen and (max-width: 500px) {
+  .glav3, .glav4{
+    display: none;
+   }
+
+   .glav1{
+    border: none;
+   }
+
+   
+   .glavFO2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px; 
+   }
+
+   .glav1A{
+    width: 300px;
+    justify-content: start;
+    padding-bottom: 0px;
+    margin: 0px;
+  
+    
+   }
+
+   .glav11, .glav12{
+       padding-right: 0px;
+       width: 180px;
+     }
+
+     .glav1{
+      margin-top: 40px;
+      margin-bottom: 0px;
+      height: 140px;
+      width: 100px;
+              }
+      
+              .glav2{
+                margin-bottom: 70px;
+                margin-top: 40px;
+                height: 140px;
+                width: 100px;
+               
+              }
+
+              .glavF1{
+              
+                margin-left: 40px;
+              }
+
+              .glavFF1{
+              height: 130px;  
+              }
+
+             
+
+}

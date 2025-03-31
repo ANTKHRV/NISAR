@@ -1,0 +1,73 @@
+.modal-menu {
+  position: fixed; /* Зафиксированное положение на экране */
+  top: 0;
+width: 350px;
+  left: 0px; /* Скрытое состояние, когда окно вывезено за левый край */
+   /* Ширина модального окна */
+  height: 100%; /* Высота модального окна на всю высоту экрана */
+  background-color: #232323; /* Цвет фона модального окна */
+  
+  /* Плавная анимация изменения позиции */
+  z-index: 1000; /* Убедитесь, что окно находится поверх других элементов */
+}
+
+.modal-menu--enter {
+  left: 0; /* Позиция при входе в окно */
+}
+
+.modal-menu--exit {
+  left: -300px; /* Позиция при выходе из окна */
+}
+  .modal-close-button4 {
+    border: 0px;
+    position: fixed;
+    top: 14px;
+    left: 304px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    font-size: 25px;
+    font-weight: 100;
+    /* padding: 10px; */
+    background-color: #232323;
+    align-items: center;
+    color: rgb(255, 255, 255, 0.6); 
+    z-index: 12222;
+    cursor: pointer;
+  }
+  
+  .modal-close-button4:hover{
+    color:rgb(208, 208, 208);
+  }
+
+
+.modal-op {
+  padding: 0px; /* Отступы для содержимого модального окна */
+  
+}
+
+@media screen and (max-width: 950px) {
+  .modal-menu {
+    width: 285px;
+  }
+
+  .modal-close-button4 {
+    border: 0px;
+    position: fixed;
+    top: 14px;
+    left: 222px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    font-size: 25px;
+    font-weight: 100;
+    /* padding: 10px; */
+    background-color: #232323;
+    align-items: center;
+    color: rgb(255, 255, 255, 0.6); 
+    z-index: 12222;
+    cursor: pointer;
+  }
+}
