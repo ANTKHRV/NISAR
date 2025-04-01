@@ -7,7 +7,8 @@ import ru from 'react-phone-number-input/locale/ru';
 import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
 import ReCAPTCHA from "react-google-recaptcha";
-
+import PDF1 from "../../PDF/Privacy.pdf";
+import PDF3 from "../../PDF/Privacydata.pdf";
 
 
 
@@ -96,7 +97,7 @@ const Nachat = (props) => {
       </form>
 
       <div className={s.Tt}>
-        <p className={s.R}>Заполняя эту форму, вы подтверждаете, что ознакомились с <a target="_blank" rel="noreferrer" className={s.spanN}>политикой конфиденциальности</a> и <a target="_blank" rel="noreferrer" className={s.spanN}>пользовательским соглашением </a>, а также даёте согласие на <a target="_blank" rel="noreferrer" className={s.spanN}>обработку своих персональных данных</a></p></div>
+      <p className={s.R}>Заполняя эту форму, вы подтверждаете, что ознакомились с <a href={PDF1} target="_blank" rel="noreferrer" className={s.spanN}>политикой конфиденциальности</a> <a target="_blank" rel="noreferrer" className={s.spanN}></a>, а также даёте согласие на <a href={PDF3} target="_blank" rel="noreferrer" className={s.spanN}>обработку своих персональных данных</a></p></div>
     </div>
 
 

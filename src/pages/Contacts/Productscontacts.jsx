@@ -12,10 +12,12 @@ import React, { useState, useRef } from "react"
 import emailjs from '@emailjs/browser';
 import { useNavigate } from "react-router";
 import InputMask from "react-input-mask";
+import PDF1 from "../../PDF/Privacy.pdf";
+import PDF3 from "../../PDF/Privacydata.pdf";
 
 const Productscontacts = () => {
 
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
 
   // const [value, setValue] = useState()
 
@@ -215,6 +217,9 @@ const Productscontacts = () => {
                   </div>   <div className={s.capcha}>
                     <ReCAPTCHA sitekey={process.env.REACT_APP_SITE_KEY} />
                   </div> </form>
+                  <div className={s.Tt}>
+      <p className={s.R}>Заполняя эту форму, вы подтверждаете, что ознакомились с <a href={PDF1} target="_blank" rel="noreferrer" className={s.spanN}>политикой конфиденциальности</a> <a target="_blank" rel="noreferrer" className={s.spanN}> </a>, а также даёте согласие на <a href={PDF3} target="_blank" rel="noreferrer" className={s.spanN}>обработку своих персональных данных</a></p></div>
+    
               </div>
 
             </div>
@@ -315,6 +320,10 @@ const Productscontacts = () => {
                   </div>
                   
                   </form>
+                  <div className={s.Tt}>
+                  <p className={s.R}>Заполняя эту форму, вы подтверждаете, что ознакомились с <a href={PDF1} target="_blank" rel="noreferrer" className={s.spanN}>политикой конфиденциальности</a> <a target="_blank" rel="noreferrer" className={s.spanN}> </a>, а также даёте согласие на <a href={PDF3} target="_blank" rel="noreferrer" className={s.spanN}>обработку своих персональных данных</a></p></div>
+    
+    
                   
               </div>
 
