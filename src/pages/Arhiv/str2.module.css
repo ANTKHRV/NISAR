@@ -1,0 +1,572 @@
+@font-face {
+  /*подключаем шрифт, сначала скачиваем его и переносим либо всю папку либо конкретный файл шрифта в папку (у меня шрифты лежат в папке fonts)*/
+  src: url(/src/fonts/OpenSans.ttf);
+  /*с помощью src вытаскиваем файл который нам нужен, пишем относительный путь к файлу шрифта, так как мы находимся в папке css в файле style, нужно выйти на папку выше (../) зайти в папку fonts (fonts/) и выбрать нужный файл, не забываем расширение .ttf*/
+  font-family: OpenSans;
+  /*обязательно указываем название шрифта, его можно придумать самостоятельно, важно, чтобы данное название совпадало с тем, которое вы пишите когда присваиваете этот шрифт чему-либо ( в моем случае на в строке 7 я присваиваю его всему сайту, потмоу что пишу font-family в теге body)*/
+}
+
+@font-face {
+  /*подключаем шрифт, сначала скачиваем его и переносим либо всю папку либо конкретный файл шрифта в папку (у меня шрифты лежат в папке fonts)*/
+  src: url(/src/fonts/RobotoCondensed-Regular.ttf);
+  /*с помощью src вытаскиваем файл который нам нужен, пишем относительный путь к файлу шрифта, так как мы находимся в папке css в файле style, нужно выйти на папку выше (../) зайти в папку fonts (fonts/) и выбрать нужный файл, не забываем расширение .ttf*/
+  font-family: RobotoCondensed-Regular;
+  /*обязательно указываем название шрифта, его можно придумать самостоятельно, важно, чтобы данное название совпадало с тем, которое вы пишите когда присваиваете этот шрифт чему-либо ( в моем случае на в строке 7 я присваиваю его всему сайту, потмоу что пишу font-family в теге body)*/
+}
+
+.dropbtn1105 {
+  display: flex;
+  border: none;
+}
+
+.grid3V{
+  display: none;
+}
+
+.glavvvv2 {
+  display: none;
+}
+
+
+.glavvvv {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  justify-content: center;
+}
+
+.glavvv {
+  width: 100%;
+  /* background-color: black; */
+  max-width: 1250px;
+  min-width: 350px;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  /* box-sizing: content-box; */
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+
+
+.glav {
+  justify-items: stretch;
+  align-items: stretch;
+  row-gap: 22px;
+  column-gap: 0px;
+  grid-template-columns: auto auto auto;
+  display: grid;
+  grid-template-columns: 1fr 0.045fr 0.5001fr;
+  place-items: center;
+  /* background-color: blue; */
+  /* margin: 50px; */
+  background-color: rgb(147, 72, 72);
+}
+
+.onas {
+  display: flex;
+  justify-content: center;
+  padding-top: 0px;
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  font-family: RobotoCondensed-Regular;
+  font-weight: 500;
+  width: 100%;
+}
+
+.onas2 {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  font-family: RobotoCondensed-Regular;
+  font-weight: 500;
+  width: 100%;
+}
+
+.onas3 {
+  width: 100%;
+  background-image: linear-gradient(to top, rgba(2, 123, 173, 1.0), rgba(0, 160, 227, .99), rgba(2, 123, 173, 1.0));
+  margin-bottom: 35px;
+  padding-top: 10px;
+  border-radius: 5px;
+  height: auto;
+  position: relative;
+  z-index: 2500;
+
+}
+
+.onas3form {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: bisque; */
+
+}
+
+.inp {
+  outline: none;
+  font-size: 16px;
+  border-radius: 3px;
+  height: 40px;
+  padding: 0 10px;
+  background: #fff;
+  color: #666;
+  border: 1px solid #e5e5e5;
+  transition: .2s ease-in-out;
+  transition-property: all;
+  transition-property: color, background-color, border;
+  width: 350px;
+  box-sizing: border-box;
+}
+
+.onas3knop {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 40px;
+  cursor: pointer;
+  background-color: rgba(44, 150, 238, 1);
+
+  color: #fff;
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.onas3knop:hover {
+  background-color: rgb(86, 165, 230, 0.8);
+}
+
+.onas3text {
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-family: RobotoCondensed-Regular;
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+.onastext {
+  text-align: justify;
+  margin-top: 20px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-family: OpenSans;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.onastextglav {
+  font-family: RobotoCondensed-Regular;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  text-align: center;
+  font-weight: 500;
+  color: #333;
+  text-transform: none;
+  margin-bottom: 20px;
+}
+
+.arhivcontent {
+  display: flex;
+  width: 100%;
+  margin-bottom: 30px;
+
+}
+
+.arhivcontent1 {
+  border: 2px solid rgb(14, 156, 217);
+  border-radius: 5px;
+  display: flex;
+  width: 100%;
+  margin: 0px 1px;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.grid1 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  background-color: rgb(0, 164, 234);
+  font-family: RobotoCondensed-Regular;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+
+.grid23 {
+  display: flex;
+ 
+}
+
+.grid2o {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+
+.grid2 {
+  width: 100%;
+  aspect-ratio: 1;
+  min-height: 100%;
+  background-image: url(./foto/first/first.jpg);
+  background-size: cover;
+
+}
+
+.grid3 {
+  width: 50%;
+  padding-top: 50px;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  justify-content: start;
+ 
+}
+
+.grid3a {
+  background-color: rgb(0, 164, 234);
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 0px;
+  width: 100%;
+  margin-left: 0px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  width: 100%;
+
+}
+
+.dropdowncontent151 {
+  display: none;
+  font-weight: 300;
+  font-size: 15px;
+  font-family: OpenSans;
+  color: black;
+  margin-top: 25px;
+  line-height: 1.5;
+}
+
+.dropdowncontent15 {
+
+  display: none;
+  font-weight: 300;
+  font-size: 15px;
+  font-family: OpenSans;
+  margin-top: 25px;
+  line-height: 1.5;
+}
+
+.span {
+  /* font-weight: 600;
+  padding-right: 10px; */
+  padding-left: 5px;
+  padding-top: 2px;
+  font-size: 14px;
+  font-family: RobotoCondensed-Regular;
+  font-weight: 500;
+}
+
+.dropbtn1105 {
+  display: flex;
+  border: none;
+}
+
+.dstr {
+  width: 20px;
+  padding-top: 0px;
+  height: 20px;
+  background: url(./50.png);
+  background-size: cover;
+  margin-top: 0px;
+  border: none;
+  margin: 0px 5px 0px 15px;
+}
+
+.dstr2 {
+  width: 20px;
+  padding-top: 0px;
+  height: 20px;
+  background: url(./50\(2\).png);
+  background-size: cover;
+  margin-top: 0px;
+  border: none;
+  margin: 0px 5px 0px 15px;
+}
+
+.grid4o {
+  width: 50%;
+}
+
+.grid4 {
+ 
+  background-image: url(./АА.png);
+  /* width: 50%; */
+  height: 125px;
+  width: 146px;
+  margin: 20px 0px;
+  background-size: contain;
+  border-radius: 2px;
+}
+
+.grid4pic{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridbolshe {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.gridbolshea {
+  text-align: center;
+  background-color: rgb(0, 164, 234);
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-family: RobotoCondensed-Regular;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+
+}
+
+.gridbolshea:hover {
+  background-color: black;
+}
+
+.glav1 {
+  flex-direction: column;
+  /* flex-direction: column-reverse; */
+  display: flex;
+  /* justify-content: center; */
+  background-color: rgb(255, 255, 255);
+
+
+}
+
+.glav2 {
+  /* flex-direction: column-reverse; */
+  display: flex;
+  /* justify-content: center; */
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  border-right: 1px solid rgb(101, 63, 63);
+
+}
+
+.glav3 {
+  /* flex-direction: column-reverse; */
+  display: flex;
+  width: 100%;
+  /* justify-content: center; */
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  border-left: 1px solid rgb(215, 215, 215);
+
+
+}
+
+.glav3a {
+  width: 100%;
+  background-image: linear-gradient(to top, rgba(2, 123, 173, 1.0), rgba(0, 160, 227, .99), rgba(2, 123, 173, 1.0));
+  margin-left: 9.5%;
+}
+
+
+@media screen and (max-width: 1600px) {}
+
+@media screen and (max-width: 1280px) {
+  .glavvv {
+    padding: 0px 20px;
+    padding-bottom: 40px;
+    padding-top: 70px;
+  }
+
+
+}
+
+@media screen and (max-width: 1080px) {
+
+
+
+  .glavvv {
+
+    margin-bottom: 0px;
+
+  }
+
+  .glavvv {
+    padding: 0 7%;
+    padding-top: 70px;
+  }
+
+  .grid2 {
+    width: 100%;
+
+    background-color: #666;
+
+  }
+}
+
+@media screen and (max-width: 1050px) {
+
+
+  .grid2 {
+    width: 100%;
+
+    background-color: #666;
+
+  }
+
+  .glavvv {
+
+    padding-top: 15px;
+  }
+
+  .glav2 {
+    display: none;
+  }
+
+  .glav {
+    justify-items: stretch;
+    align-items: stretch;
+    row-gap: 22px;
+    column-gap: 0px;
+    grid-template-columns: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    /* background-color: blue; */
+    /* margin: 50px; */
+    background-color: rgb(255, 255, 255);
+  }
+
+  .onas {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    font-family: RobotoCondensed-Regular;
+    font-weight: 500;
+    width: 100%;
+  }
+
+
+  .onastextglav {
+    margin-top: 30px;
+  }
+
+
+}
+
+
+@media screen and (max-width: 800px) {
+  .grid2 {
+    width: 100%;
+   
+    background-color: #666;
+
+  }
+
+  .grid4 {
+    margin-bottom: 20px;}
+
+  .onas3knop {
+    width: 210px;
+  }
+
+  .inp {
+    width: auto;
+  }
+
+  .glav1 {
+    width: 100%;
+    min-width: 220px;
+    max-width: 600px;
+  }
+
+  .onastextglav {
+    margin-top: 20px;
+  }
+
+  .glavvv {
+    padding: 0 3%;
+  }
+
+  .onas2 {
+    margin-bottom: 25px;
+    margin-top: 30px;
+  }
+
+  .onas,
+  .onas2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+  .grid23 {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .grid2o {
+    width: 100%;
+  }
+
+
+
+  .grid3 {
+    display: none;
+  }
+
+  .grid3V {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    border-bottom: solid 1px #dfdede;
+  }
+
+  .grid4o {
+    width: 100%;
+  }
+
+
+}

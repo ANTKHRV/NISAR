@@ -105,7 +105,8 @@ let Mennuu1 = React.createRef();
   </div>
 <div>
 <div ref={Mennuu} className="dropdown-content2">
-  <div>LINK1</div>  <div>LINK2</div> <div>LINK3</div> 
+<NavLink  to='/arhiv' className={setActive22}>Архив продаж</NavLink>
+  {/* <div>LINK2</div> <div>LINK3</div>  */}
     </div> 
   </div>
 

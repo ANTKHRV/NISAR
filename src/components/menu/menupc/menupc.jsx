@@ -66,17 +66,18 @@ const Menupc = () => {
       <div className={menumodule.dropdown}>
         <div className={`${menumodule.dropbtn} ${menumodule.glavA}`}>УСЛУГИ <img src={down} alt='down' className={menumodule.down}></img></div>
         <div className={menumodule.dropdowncontent}>
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a className={menumodule.a}>Link 3</a>
+        {/* <NavLink to='/arhiv' className={setActive22}><div className={menumodule.g}>Архив продаж</div>
+        </NavLink>
+       */}
+          <a className={menumodule.a}>Link 1</a>
         </div>
       </div>
       <div className={menumodule.dropdown}>
         <div className={`${menumodule.dropbtn} ${menumodule.glavA}`}>ПРОДАЖА <img src={down} alt='down' className={menumodule.down}></img></div>
         <div className={menumodule.dropdowncontent}>
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a className={menumodule.a}>Link 3</a>
+        <NavLink to='/arhiv' className={setActive22}><div className={menumodule.g}>Архив продаж</div>
+        </NavLink>
+        
         </div>
       </div>
       <NavLink to='/pokupki' className={setActive}><div className={menumodule.glavA}>ПОКУПКИ</div></NavLink>

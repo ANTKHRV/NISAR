@@ -10,6 +10,7 @@ import News from './pages/News/News';
 import Hotp from './pages/Hotp/Hotp'
 import Pokupki from './pages/Pokupki/Pokupki';
 import Doc from './pages/Doc/Doc';
+import Arhiv from './pages/Arhiv/Arhiv';
 import Resultsl from './pages/Results/Resultsl';
 import ScrollToTop from './ScrollToTop';
 
@@ -30,7 +31,9 @@ const root = document.getElementById("root");
             <Route path="/hotp" element={<Hotp/>} />
             <Route path="/pokupki" element={<Pokupki/>} />
             <Route path="/documents" element={<Doc/>} />
+            <Route path="/arhiv" element={<Arhiv/>} />
             <Route path="/search" element={<Resultsl/>} />
+            
            
           </Routes>
         </BrowserRouter>
