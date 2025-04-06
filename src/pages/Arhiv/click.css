@@ -1,3 +1,74 @@
+.fullscreen-gallery {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+.foto{
+    width:70%;
+    height: auto;
+    display:block; 
+    margin: 0 auto 
+}
+
+.off{
+    font-size:2.5rem;
+    border:none;
+    color:rgb(255, 255, 255, 0.5);
+    background-color: black;
+    position:absolute;
+    right: 13px;
+    top:0px;
+    cursor:pointer;
+    font-weight: 100;  
+}
+
+.off:hover{
+    color: white;
+}
+
+.vlevo{
+font-size:2.5rem;
+border:none;
+color:white;
+color:rgb(255, 255, 255, 0.8);
+background-Color:rgb(0, 164, 234);
+position:absolute;
+left: 30px;
+top:46%;
+padding:0px 12px 4px 8px;
+border-Radius:40px;
+cursor:pointer 
+}
+
+.vlevo:hover{
+    color:rgb(255, 255, 255);
+}
+
+.vpravo{
+    font-size:2.5rem;
+    border:none;
+    color:white;
+    color:rgb(255, 255, 255, 0.8);
+    background-Color:rgb(0, 164, 234);
+    position:absolute;
+    right: 30px;
+    top:46%;
+    padding:0px 8px 4px 12px;
+    border-Radius:40px;
+    cursor:pointer 
+    }
+
+    .vpravo:hover{
+        color:rgb(255, 255, 255, 1);
+    }
 
 .show2{
     display: block;
@@ -20,3 +91,24 @@
 
 
 
+@media screen and (max-width: 650px) {
+
+    .off{
+        top:17px;
+        right: 0px;
+    }
+    
+    .foto{
+        width: 100%;
+    }
+  .vlevo{
+ 
+left: 3vw;
+  }
+
+  .vpravo{
+    
+    right: 3vw;
+  }
+
+}
